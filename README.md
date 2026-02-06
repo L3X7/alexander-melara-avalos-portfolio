@@ -83,6 +83,5 @@ pnpm dev
 
 Alex Melara Avalos - Full Stack Developer
 
-- 💻 [GitHub](github.com/L3X7)
 - 💼 [LinkedIn](https://www.linkedin.com/in/lexmelara91)
 - 📧 [lexmelara@gmail.com](mailto:lexmelara@gmail.com)
