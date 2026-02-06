@@ -78,6 +78,12 @@ pnpm dev
 4. View the project open http://localhost:3000 in your browser.
 
 ---
+## 📱 Screenshots
+![Hero Section](./assets/black-theme.png)
+
+![Tech Stack Grid](./assets/white-theme.png)
+
+---
 
 ## 📬 Contact
 
