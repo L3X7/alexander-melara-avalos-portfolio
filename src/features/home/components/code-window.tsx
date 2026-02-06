@@ -4,7 +4,7 @@ export function CodeWindow({ className }: { className?: string }) {
 	return (
 		<div
 			className={cn(
-				"relative w-full max-w-lg overflow-hidden rounded-xl border border-white/10 bg-[#0f1117] shadow-2xl",
+				"relative w-full max-w-lg overflow-hidden rounded-xl border border-white/10 border-t-white/25 bg-[#0d1117] shadow-2xl",
 				className,
 			)}
 		>

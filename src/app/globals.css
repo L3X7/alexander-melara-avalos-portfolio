@@ -192,5 +192,42 @@
 			stroke;
 		transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 		transition-duration: 300ms;
+
+		/* For Firefox */
+		scrollbar-width: thin;
+		scrollbar-color: hsl(var(--muted-foreground) / 0.3) transparent;
+	}
+}
+
+/* -------------------------------------------------------------------------- */
+/* 4. UTILITIES STYLES                                                             */
+/* -------------------------------------------------------------------------- */
+
+@layer utilities {
+	/* 1. The Scrollbar Container */
+	::-webkit-scrollbar {
+		width: 10px; /* Width of the vertical scrollbar */
+		height: 10px; /* Height of the horizontal scrollbar */
+	}
+
+	/* 2. The Track (Background) */
+	::-webkit-scrollbar-track {
+		background: transparent; /* Keeps it clean/invisible */
+	}
+
+	/* 3. The Handle (The part you drag) */
+	::-webkit-scrollbar-thumb {
+		@apply bg-muted-foreground/20 rounded-full border-[3px] border-solid border-transparent bg-clip-content;
+		/* Explication of the trick above:
+       - bg-muted-foreground/20: Subtle gray color.
+       - rounded-full: Makes it pill-shaped.
+       - border-transparent + bg-clip-content: This creates a "padding" effect 
+         so the scrollbar looks like it's floating inside the track.
+    */
+	}
+
+	/* 4. Hover State */
+	::-webkit-scrollbar-thumb:hover {
+		@apply bg-muted-foreground/50; /* Darker when you grab it */
 	}
 }

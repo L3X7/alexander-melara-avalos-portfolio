@@ -10,7 +10,6 @@ export function ThemeToggle() {
 
 	React.useEffect(() => {
 		setMounted(true);
-		console.log("ThemeToggle Mounted. Current:", theme, "Resolved:", resolvedTheme);
 	}, []);
 
 	if (!mounted) {

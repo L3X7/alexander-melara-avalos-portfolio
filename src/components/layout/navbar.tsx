@@ -19,7 +19,7 @@ const links: {
 	{
 		key: "home",
 		title: "Home",
-		href: "/home",
+		href: "/",
 		description:
 			"A modal dialog that interrupts the user with important content and expects a response.",
 	},
@@ -75,7 +75,8 @@ export function Navbar() {
 				<div className="flex items-center gap-4">
 					<Button
 						variant="default"
-						className="font-semibold shadow-lg"
+						className="hidden md:inline-flex font-semibold shadow-lg"
+						size="sm"
 					>
 						Contact Me
 					</Button>
