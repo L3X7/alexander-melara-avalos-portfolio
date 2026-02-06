@@ -47,7 +47,7 @@ src/
 │   ├── home/             # Home Section components
 │   ├── projects/         # Project showcase components
 │   └── tech-stack/       # Tech Stack components
-├── lib/                  # Utilities (cn, fetchers)
+├── lib/                  # Utilities (cn)
 └── public/               # static files
 ```
 
@@ -60,7 +60,7 @@ To run this project locally:
 1. Clone the repository
 
 ```bash
-git clone https://github.com/L3X7/portfolio.git
+git clone https://github.com/L3X7/alexander-melara-avalos-portfolio.git
 ```
 
 2. Install dependencies
