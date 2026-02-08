@@ -2,7 +2,10 @@ import { TechCard } from "@/components/ui/tech-card";
 
 export function TechEcosystemSection() {
 	return (
-		<div id="tech-stack" className="scroll-mt-24 container mx-auto flex flex-col w-full mt-5 mb-10 md:pt-10 md:pb-10  px-4">
+		<div
+			id="tech-stack"
+			className="scroll-mt-24 container mx-auto flex flex-col w-full py-10 xl:py-15 px-4"
+		>
 			<h3 className="text-4xl font-extrabold tracking-tight md:text-5xl">
 				Tech Ecosystem
 			</h3>
