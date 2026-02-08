@@ -40,7 +40,7 @@ export function SearchFilter() {
 	return (
 		<div className="flex flex-col sm:flex-row gap-4 mt-12 mb-8">
 			<div className="bg-border rounded-lg flex flex-row justify-between gap-4 p-3 w-full">
-				<InputGroup className="max-w-xs">
+				<InputGroup className="max-w-xs shadow-none">
 					<InputGroupAddon>
 						<SearchIcon />
 					</InputGroupAddon>
