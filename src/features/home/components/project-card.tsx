@@ -3,11 +3,11 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Project } from "@/features/projects/types/project";
 import { ArrowUpRight } from "lucide-react";
 
-interface ProjectProps {
+interface ProjectCardProps {
 	project: Project;
 }
 
-export default function CardProject({ project }: ProjectProps) {
+export default function ProjectCard({ project }: ProjectCardProps) {
 	return (
 		<Card
 			key={project.id}

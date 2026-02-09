@@ -1,6 +1,6 @@
 import { Project } from "@/features/projects/types/project";
 import { allProjects } from "@/lib/projects-data";
-import CardProject from "./card-project";
+import CardProject from "./project-card";
 
 export function FeatureProjectsSection() {
 	const projects: Project[] = allProjects.slice(0,3);

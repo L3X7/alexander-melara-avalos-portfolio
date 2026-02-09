@@ -37,6 +37,13 @@ const links: {
 		description:
 			"A modal dialog that interrupts the user with important content and expects a response.",
 	},
+		{
+		key: "about",
+		title: "About",
+		href: "/about",
+		description:
+			"A modal dialog that interrupts the user with important content and expects a response.",
+	},
 ];
 
 export function Navbar() {

@@ -7,8 +7,7 @@ import {
 	InputGroupInput,
 } from "@/components/ui/input-group";
 import { SearchIcon } from "lucide-react";
-import { usePathname, useSearchParams } from "next/navigation";
-import { useRouter } from "next/navigation";
+import { usePathname, useRouter, useSearchParams } from "next/navigation";
 
 export function SearchFilter() {
 	const searchParams = useSearchParams();
