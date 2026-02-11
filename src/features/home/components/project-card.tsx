@@ -2,6 +2,7 @@ import { Badge } from "@/components/ui/badge";
 import { Card, CardContent } from "@/components/ui/card";
 import { Project } from "@/features/projects/types/project";
 import { ArrowUpRight } from "lucide-react";
+import Image from "next/image";
 
 interface ProjectCardProps {
 	project: Project;
@@ -15,9 +16,11 @@ export default function ProjectCard({ project }: ProjectCardProps) {
 		>
 			{/* <div className="absolute inset-0 z-30 aspect-video bg-black/35" /> */}
 			<div className="relative aspect-video overflow-hidden">
-				<img
+				<Image
+					fill
 					src="/images/recycle.png"
 					alt="Event cover"
+					sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
 					className="w-full h-full object-cover brightness-60 grayscale dark:brightness-40 rounded-t-xl  transition-transform duration-500 group-hover:scale-105"
 				/>
 			</div>
@@ -35,7 +38,8 @@ export default function ProjectCard({ project }: ProjectCardProps) {
 				</p>
 				<div className="mt-auto border-t pt-4">
 					<a className="text-sm font-semibold text-primary flex flex-row">
-						View project <ArrowUpRight className="mt-0.5 ml-0.5" size={18} />
+						View project{" "}
+						<ArrowUpRight className="mt-0.5 ml-0.5" size={18} />
 					</a>
 				</div>
 			</CardContent>

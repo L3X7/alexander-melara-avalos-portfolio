@@ -26,7 +26,7 @@ export default async function ProjectPage({
 	});
 
 	return (
-		<div className="container mx-auto flex flex-col px-4 w-full py-10">
+		<div className="container mx-auto flex flex-col px-4 w-full py-10 md:pt-30 md:pb-20">
 			<div className="flex flex-col gap-4">
 				<h3 className="text-4xl font-extrabold tracking-tight md:text-5xl text-balance">
 					Projects

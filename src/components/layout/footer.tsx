@@ -2,8 +2,6 @@ import { ArrowRight } from "lucide-react";
 import Link from "next/link";
 
 export function Footer() {
-	const currentYear = new Date().getFullYear();
-
 	return (
 		<footer className="border-t border-border bg-background">
 			<div className="container mx-auto mt-6 md:mt-12 px-4">
@@ -37,25 +35,25 @@ export function Footer() {
 							<nav className="flex flex-col gap-3 text-muted-foreground">
 								<Link
 									href="#hero"
-									className="hover:text-foreground transition-colors"
+									className="hover:text-foreground transition-colors w-fit"
 								>
 									Hero
 								</Link>
 								<Link
 									href="#feature-projects"
-									className="hover:text-foreground transition-colors"
+									className="hover:text-foreground transition-colors w-fit"
 								>
 									Projects
 								</Link>
 								<Link
 									href="#tech-stack"
-									className="hover:text-foreground transition-colors"
+									className="hover:text-foreground transition-colors w-fit"
 								>
 									Tech Stack
 								</Link>
 								<Link
 									href="#about"
-									className="hover:text-foreground transition-colors"
+									className="hover:text-foreground transition-colors w-fit"
 								>
 									About
 								</Link>
@@ -67,28 +65,20 @@ export function Footer() {
 							</h4>
 							<nav className="flex flex-col gap-3 text-muted-foreground">
 								<a
-									href="https://github.com"
+									href="https://github.com/L3X7"
 									target="_blank"
 									rel="noreferrer"
-									className="hover:text-foreground transition-colors"
+									className="hover:text-foreground transition-colors w-fit"
 								>
 									GitHub
 								</a>
 								<a
-									href="https://linkedin.com"
+									href="https://www.linkedin.com/in/lexmelara91"
 									target="_blank"
 									rel="noreferrer"
-									className="hover:text-foreground transition-colors"
+									className="hover:text-foreground transition-colors w-fit"
 								>
 									LinkedIn
-								</a>
-								<a
-									href="https://twitter.com"
-									target="_blank"
-									rel="noreferrer"
-									className="hover:text-foreground transition-colors"
-								>
-									Twitter / X
 								</a>
 							</nav>
 						</div>

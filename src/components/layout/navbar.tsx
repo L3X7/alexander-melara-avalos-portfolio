@@ -1,4 +1,11 @@
+"use client";
+
+import { allNavbarOptions } from "@/lib/navbar-data";
+import { cn } from "@/lib/utils";
+import { Terminal } from "lucide-react";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
+import { Button } from "../ui/button";
 import {
 	NavigationMenu,
 	NavigationMenuItem,
@@ -6,47 +13,12 @@ import {
 	NavigationMenuList,
 	navigationMenuTriggerStyle,
 } from "../ui/navigation-menu";
-import { Terminal } from "lucide-react";
-import { Button } from "../ui/button";
 import { ThemeToggle } from "../ui/theme-toggle";
 
-const links: {
-	key: string;
-	title: string;
-	href: string;
-	description: string;
-}[] = [
-	{
-		key: "home",
-		title: "Home",
-		href: "/",
-		description:
-			"A modal dialog that interrupts the user with important content and expects a response.",
-	},
-	{
-		key: "projects",
-		title: "Projects",
-		href: "/projects",
-		description:
-			"A modal dialog that interrupts the user with important content and expects a response.",
-	},
-	{
-		key: "tech-stack",
-		title: "Tech stack",
-		href: "/tech-stack",
-		description:
-			"A modal dialog that interrupts the user with important content and expects a response.",
-	},
-		{
-		key: "about",
-		title: "About",
-		href: "/about",
-		description:
-			"A modal dialog that interrupts the user with important content and expects a response.",
-	},
-];
-
 export function Navbar() {
+	const pathname = usePathname();
+	const links = allNavbarOptions;
+
 	return (
 		<header className="sticky top-0 w-full border-b border-border/40 bg-background/45 backdrop-blur supports-backdrop-filter:bg-background/60 z-10">
 			<div className="container mx-auto flex h-16 items-center justify-between px-4">
@@ -58,7 +30,7 @@ export function Navbar() {
 						href="/"
 						className="text-lg font-bold tracking-tight text-foreground"
 					>
-						Alex's Portfolio
+						Alex&apos;s Portfolio
 					</Link>
 				</div>
 
@@ -66,10 +38,18 @@ export function Navbar() {
 					<NavigationMenuList className="gap-12">
 						{links.map((item) => (
 							<NavigationMenuItem key={item.key}>
-								<NavigationMenuLink asChild>
+								<NavigationMenuLink
+									asChild
+									active={pathname === item.href}
+								>
 									<Link
 										href={item.href}
-										className={navigationMenuTriggerStyle()}
+										className={cn(
+											navigationMenuTriggerStyle(),
+											// This is the magic line:
+											pathname === item.href &&
+												"bg-accent text-accent-foreground",
+										)}
 									>
 										{item.title}
 									</Link>

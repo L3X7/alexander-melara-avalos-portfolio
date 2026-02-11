@@ -1,7 +1,6 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Tech } from "./types/tech";
 import { IconMask } from "@/components/ui/icon-mask";
-import { Badge } from "@/components/ui/badge";
 import { TruncatedTooltip } from "@/components/ui/truncated-tooltip";
 import { BadgeLevelTechStack } from "@/components/ui/badge-level";
 

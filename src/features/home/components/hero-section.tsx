@@ -29,7 +29,7 @@ export function HeroSection() {
 						variant="outline"
 						size="lg"
 					>
-						Let's Talk
+						Let&apos;s Talk
 					</Button>
 				</div>
 			</div>
