@@ -11,15 +11,19 @@ export default async function TechStackPage({
 
 	const categoryFilter = category || "";
 
-	const filteredTechs = allTechStack.filter((tech) => {
-		const matchesCategory =
-			categoryFilter.toLocaleLowerCase() === "all" ||
-			categoryFilter.toLocaleLowerCase() === ""
-				? true
-				: tech.category.includes(categoryFilter.toLocaleLowerCase());
+	const filteredTechs = allTechStack
+		.filter((tech) => {
+			const matchesCategory =
+				categoryFilter.toLocaleLowerCase() === "all" ||
+				categoryFilter.toLocaleLowerCase() === ""
+					? true
+					: tech.category.includes(
+							categoryFilter.toLocaleLowerCase(),
+						);
 
-		return matchesCategory;
-	});
+			return matchesCategory;
+		})
+		.sort((a, b) => a.name.localeCompare(b.name));
 
 	return (
 		<div className="container mx-auto flex flex-col px-4 w-full py-10 xl:py-15">

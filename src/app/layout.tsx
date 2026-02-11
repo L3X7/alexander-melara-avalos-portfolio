@@ -4,6 +4,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { Navbar } from "@/components/layout/navbar";
 import { Footer } from "@/components/layout/footer";
+import { TooltipProvider } from "@/components/ui/tooltip";
 
 const geistSans = Geist({
 	variable: "--font-geist-sans",
@@ -36,12 +37,14 @@ export default function RootLayout({
 					enableSystem
 					disableTransitionOnChange
 				>
-					<div className="relative flex min-h-screen flex-col">
-						<Navbar></Navbar>
+					<TooltipProvider>
+						<div className="relative flex min-h-screen flex-col">
+							<Navbar></Navbar>
 
-						<main className="flex-1 w-full">{children}</main>
-						<Footer></Footer>
-					</div>
+							<main className="flex-1 w-full">{children}</main>
+							<Footer></Footer>
+						</div>
+					</TooltipProvider>
 				</ThemeProvider>
 			</body>
 		</html>

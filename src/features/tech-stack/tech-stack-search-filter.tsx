@@ -1,6 +1,7 @@
 "use client";
 import { Button } from "@/components/ui/button";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
+import { useMemo } from "react";
 
 export function TechStackSearchFilter() {
 	const searchParams = useSearchParams();
@@ -21,9 +22,11 @@ export function TechStackSearchFilter() {
 		"All",
 		"Backend",
 		"Cloud",
+		"Database",
+		"DevOps",
 		"Frontend",
 		"Mobile",
-		"DevOps",
+		"UI & Design",
 	];
 
 	return (
