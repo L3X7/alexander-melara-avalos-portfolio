@@ -5,7 +5,7 @@ import { Moon, Sun } from "lucide-react";
 import React from "react";
 
 export function ThemeToggle() {
-	const { setTheme, theme, resolvedTheme } = useTheme();
+	const { setTheme, resolvedTheme } = useTheme();
 	const [mounted, setMounted] = React.useState(false);
 
 	React.useEffect(() => {
@@ -21,7 +21,7 @@ export function ThemeToggle() {
 			onClick={() =>
 				setTheme(resolvedTheme === "dark" ? "light" : "dark")
 			}
-			className="relative inline-flex h-10 w-10 items-center justify-center rounded-md hover:bg-muted transition-colors focus:outline-none focus:ring-2 focus:ring-ring"
+			className="relative inline-flex h-10 w-10 items-center justify-center rounded-md hover:bg-muted transition-colors focus:outline-none focus:ring-2 focus:ring-ring cursor-pointer"
 			aria-label="Toggle theme"
 		>
 			<Sun className="h-[1.2rem] w-[1.2rem] rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" />

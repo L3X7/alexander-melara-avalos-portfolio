@@ -40,7 +40,7 @@ export function TechStackSearchFilter() {
 								? "default"
 								: "outline"
 						}
-						className="first:ml-1 last:mr-1 p-1.5 min-w-18 shadow-lg border-2 border-transparent active:border-white"
+						className="first:ml-1 last:mr-1 p-1.5 min-w-18 border active:border-white cursor-pointer"
 						onClick={() => handleCategory(cat)}
 					>
 						{cat}
