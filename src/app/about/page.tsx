@@ -43,8 +43,8 @@ export default function AboutPage() {
 					</Button>
 				</div>
 			</div>
-			<div className="flex flex-col sm:flex-row gap-8 sm:gap-10 pt-8">
-				<div className="sm:w-3/5 flex flex-col">
+			<div className="flex flex-col lg:flex-row gap-8 lg:gap-10 pt-8">
+				<div className="lg:w-3/5 flex flex-col">
 					<h3 className="flex-flex-row mb-8 text-lg font-bold">
 						<BookUser className="inline" />{" "}
 						<span>From Junior to Semi-Senior</span>
@@ -69,7 +69,7 @@ export default function AboutPage() {
 						></ExperienceTimeline>
 					</div>
 				</div>
-				<div className="sm:w-2/5 flex flex-col">
+				<div className="lg:w-2/5 flex flex-col">
 					<Card>
 						<CardHeader>
 							<h3 className="text-xl font-bold tracking-wider">

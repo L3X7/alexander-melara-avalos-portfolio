@@ -6,7 +6,7 @@ interface ExperienceTimelineProps {
 
 export function ExperienceTimeline({ experiences }: ExperienceTimelineProps) {
 	return (
-		<div className="mx-auto pt-4 mt-8">
+		<div className="mx-auto pt-8">
 			<div className="relative border-l-2 border-gray-200 dark:border-gray-700 ml-3 space-y-12">
 				{experiences.map((exp, index) => (
 					<div key={index} className="relative pl-8">
