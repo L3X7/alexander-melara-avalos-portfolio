@@ -3,7 +3,7 @@ import { IconMask } from "@/components/ui/icon-mask";
 
 interface TechCardProps {
 	name: string;
-	description: string;
+	description?: string;
 	iconClass?: string;
 	iconSrc?: string;
 	nameTextColor?: string;
@@ -40,9 +40,9 @@ export function TechCard({
 					<h4 className="text-sm font-bold text-foreground">
 						{name}
 					</h4>
-					<p className="text-xs text-muted-foreground line-clamp-1">
+					{/* <p className="text-xs text-muted-foreground line-clamp-1">
 						{description}
-					</p>
+					</p> */}
 				</div>
 			</CardContent>
 		</Card>

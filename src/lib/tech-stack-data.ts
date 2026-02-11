@@ -41,7 +41,7 @@ export const allTechStack: Tech[] = [
     {
         category: "cloud",
         level: "Intermediate",
-        name: "Digital ocean",
+        name: "Digital Ocean",
         description: "Developer-friendly cloud computing.",
         iconSrc: "/icons/digitalocean.svg",
         iconClass: "h-7 w-7 bg-[#0080FF] transition-color"
