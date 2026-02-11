@@ -5,7 +5,7 @@ import { cn } from "@/lib/utils";
 import { Terminal } from "lucide-react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Button } from "../ui/button";
+import { MobileNav } from "../ui/mobile-nav";
 import {
 	NavigationMenu,
 	NavigationMenuItem,
@@ -59,16 +59,14 @@ export function Navbar() {
 					</NavigationMenuList>
 				</NavigationMenu>
 
-				<div className="flex items-center gap-4">
-					<Button
-						variant="default"
-						className="hidden md:inline-flex font-semibold shadow-lg"
-						size="sm"
-					>
-						Contact Me
-					</Button>
+				<div className="flex flex-row">
+					<div className="mr-3 md:mr-0">
+						<ThemeToggle></ThemeToggle>
+					</div>
 
-					<ThemeToggle></ThemeToggle>
+					<div className="md:hidden">
+						<MobileNav links={links}></MobileNav>
+					</div>
 				</div>
 			</div>
 		</header>
