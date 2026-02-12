@@ -23,8 +23,19 @@
     }
   },
   "ProjectSection": {
+    "title": "Projects",
+    "description": "A collection of my work in cloud architecture, DevOps automation, and full-stack engineering. Explore my open source contributions and professional case studies.",
     "viewProject": "View project",
     "projects": [
+      {
+        "description": "A Circular Economy Logistics Platform focusing on sustainability and resource recovery. Built to optimize routes for material collection and track lifecycle metrics."
+      },
+      {
+        "description": "A Circular Economy Logistics Platform focusing on sustainability and resource recovery. Built to optimize routes for material collection and track lifecycle metrics."
+      },
+      {
+        "description": "A Circular Economy Logistics Platform focusing on sustainability and resource recovery. Built to optimize routes for material collection and track lifecycle metrics."
+      },
       {
         "description": "A Circular Economy Logistics Platform focusing on sustainability and resource recovery. Built to optimize routes for material collection and track lifecycle metrics."
       },
@@ -50,5 +61,8 @@
       "about": "About"
     }
   },
-  "Common": {}
+  "Common": {
+    "search": "Search",
+    "all": "All"
+  }
 }

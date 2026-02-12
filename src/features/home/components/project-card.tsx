@@ -9,7 +9,7 @@ interface ProjectCardProps {
 	project: Project;
 }
 
-export default function ProjectCard({ project }: ProjectCardProps) {
+export function ProjectCard({ project }: ProjectCardProps) {
 	const t = useTranslations("ProjectSection");
 	const index = project.id - 1;
 	const projectLocalization = t(`projects.${index}.${project.localeKey}`);

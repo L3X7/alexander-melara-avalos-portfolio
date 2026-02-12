@@ -1,6 +1,7 @@
 import { ProjectsList } from "@/features/projects/components/projects-list";
 import { SearchFilter } from "@/features/projects/components/search-filter";
 import { allProjects } from "@/lib/projects-data";
+import { getTranslations } from "next-intl/server";
 
 export default async function ProjectPage({
 	searchParams,
@@ -8,6 +9,8 @@ export default async function ProjectPage({
 	searchParams: Promise<{ query?: string; category?: string }>;
 }) {
 	const { query, category } = await searchParams;
+
+	const t = await getTranslations("ProjectSection");
 
 	const searchQuery = query || "";
 	const categoryFilter = category || "";
@@ -29,16 +32,14 @@ export default async function ProjectPage({
 		<div className="container mx-auto flex flex-col px-4 w-full py-10 md:pt-30 md:pb-20">
 			<div className="flex flex-col gap-4">
 				<h3 className="text-4xl font-extrabold tracking-tight md:text-5xl text-balance">
-					Projects
+					{t("title")}
 				</h3>
 				<p className="text-muted-foreground text-lg max-w-xl">
-					A collection of my work in cloud architecture, DevOps
-					automation, and full-stack engineering. Explore my open
-					source contributions and professional case studies.
+					{t("description")}
 				</p>
 			</div>
-			<SearchFilter></SearchFilter>
-			<ProjectsList projects={filterProjects}></ProjectsList>
+			<SearchFilter />
+			<ProjectsList projects={filterProjects} />
 		</div>
 	);
 }

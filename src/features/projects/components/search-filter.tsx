@@ -7,12 +7,15 @@ import {
 	InputGroupInput,
 } from "@/components/ui/input-group";
 import { SearchIcon } from "lucide-react";
+import { useTranslations } from "next-intl";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
 
 export function SearchFilter() {
 	const searchParams = useSearchParams();
 	const pathname = usePathname();
 	const { replace } = useRouter();
+
+	const t = useTranslations("CommonSection");
 
 	function handleSearch(term: string) {
 		const params = new URLSearchParams(searchParams);
@@ -44,7 +47,7 @@ export function SearchFilter() {
 						<SearchIcon />
 					</InputGroupAddon>
 					<InputGroupInput
-						placeholder="Search..."
+						placeholder={`${t("search")}...`}
 						onChange={(e) => handleSearch(e.target.value)}
 						defaultValue={searchParams.get("")?.toString()}
 					/>

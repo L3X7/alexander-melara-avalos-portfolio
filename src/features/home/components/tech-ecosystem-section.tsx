@@ -3,7 +3,7 @@ import { Tech } from "@/features/tech-stack/types/tech";
 import { allTechStack } from "@/lib/tech-stack-data";
 import { useTranslations } from "next-intl";
 
-export default function TechEcosystemSection() {
+export function TechEcosystemSection() {
 	const t = useTranslations("HomePage");
 	const techs = allTechStack;
 

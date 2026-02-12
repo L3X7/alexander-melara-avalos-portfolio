@@ -1,8 +1,11 @@
 "use client";
 
+import { Link, usePathname } from "@/i18n/routing";
 import { allNavbarOptions } from "@/lib/navbar-data";
 import { cn } from "@/lib/utils";
 import { Terminal } from "lucide-react";
+import { useTranslations } from "next-intl";
+import { LanguageSwitcher } from "../ui/language-switcher";
 import { MobileNav } from "../ui/mobile-nav";
 import {
 	NavigationMenu,
@@ -12,9 +15,6 @@ import {
 	navigationMenuTriggerStyle,
 } from "../ui/navigation-menu";
 import { ThemeToggle } from "../ui/theme-toggle";
-import { Link, usePathname } from "@/i18n/routing";
-import LanguageSwitcher from "../ui/language-switcher";
-import { useTranslations } from "next-intl";
 
 export function Navbar() {
 	const t = useTranslations('Navbar');

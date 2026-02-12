@@ -3,7 +3,7 @@ import { CodeWindow } from "./code-window";
 import { ArrowRight } from "lucide-react";
 import { useTranslations } from "next-intl";
 
-export default function HeroSection() {
+export function HeroSection() {
 	const t = useTranslations("HomePage");
 	return (
 		<div

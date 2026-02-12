@@ -1,11 +1,12 @@
 import { Project } from "@/features/projects/types/project";
 import { allProjects } from "@/lib/projects-data";
-import CardProject from "./project-card";
-import { useTranslations } from "next-intl";
 
-export default function  FeatureProjectsSection() {
+import { useTranslations } from "next-intl";
+import { ProjectCard } from "./project-card";
+
+export function FeatureProjectsSection() {
 	const t = useTranslations("HomePage");
-	const projects: Project[] = allProjects.slice(0,3);
+	const projects: Project[] = allProjects.slice(0, 3);
 
 	return (
 		<div
@@ -23,7 +24,7 @@ export default function  FeatureProjectsSection() {
 				</div>
 				<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
 					{projects.map((project) => (
-						<CardProject key={project.id} project={project}></CardProject>
+						<ProjectCard key={project.id} project={project} />
 					))}
 				</div>
 			</div>

@@ -8,7 +8,7 @@ interface TechStackCardProps {
 	tech: Tech;
 }
 
-export default function TechStackCard({ tech }: TechStackCardProps) {
+export function TechStackCard({ tech }: TechStackCardProps) {
 	return (
 		<Card className="hover:shadow-xl hover:shadow-primary/5 dark:hover:border-primary/500">
 			<CardContent className="flex flex-col gap-4">

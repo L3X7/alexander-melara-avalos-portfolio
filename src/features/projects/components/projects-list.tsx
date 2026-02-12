@@ -1,7 +1,7 @@
 import { Project } from "../types/project";
 import { Button } from "@/components/ui/button";
+import { ProjectCard } from "@/features/home/components/project-card";
 import { ArrowDown } from "lucide-react";
-import ProjectCard from "@/features/home/components/project-card";
 
 interface ProjectsListProps {
 	projects: Project[];

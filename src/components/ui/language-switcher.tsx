@@ -9,7 +9,7 @@ import {
     DropdownMenuTrigger,
 } from "./dropdown-menu";
 
-export default function LanguageSwitcher() {
+export function LanguageSwitcher() {
 	const locale = useLocale();
 	const router = useRouter();
 	const pathname = usePathname();

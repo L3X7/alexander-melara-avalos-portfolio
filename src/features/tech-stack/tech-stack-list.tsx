@@ -1,4 +1,4 @@
-import TechStackCard from "./tech-stack-card";
+import { TechStackCard } from "./tech-stack-card";
 import { Tech } from "./types/tech";
 
 interface TechStackListProps {
