@@ -1,3 +1,4 @@
+import { useTranslations } from "next-intl";
 import { Experience } from "../types/experience";
 
 interface ExperienceTimelineProps {
@@ -5,11 +6,13 @@ interface ExperienceTimelineProps {
 }
 
 export function ExperienceTimeline({ experiences }: ExperienceTimelineProps) {
+	const t = useTranslations("AboutSection");
+
 	return (
 		<div className="mx-auto pt-8">
 			<div className="relative border-l-2 border-gray-200 dark:border-gray-700 ml-3 space-y-12">
-				{experiences.map((exp, index) => (
-					<div key={index} className="relative pl-8">
+				{experiences.map((exp) => (
+					<div key={exp.index} className="relative pl-8">
 						<span
 							className={`absolute top-1 -left-2.25 h-4 w-4 rounded-full border-2 border-white dark:border-gray-900 ${
 								exp.current
@@ -19,7 +22,7 @@ export function ExperienceTimeline({ experiences }: ExperienceTimelineProps) {
 						></span>
 						<div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-2">
 							<h3 className="text-lg font-bold text-gray-900 dark:text-white">
-								{exp.title}
+								{t(`jobDescriptions.${exp.index}.role`)}
 							</h3>
 							<span className="text-sm font-medium text-blue-600 bg-blue-50 dark:bg-blue-900/30 dark:text-blue-300 px-3 py-1 rounded-full w-fit mt-2 sm:mt-0">
 								{exp.period}
@@ -29,7 +32,7 @@ export function ExperienceTimeline({ experiences }: ExperienceTimelineProps) {
 							{exp.company}
 						</p>
 						<p className="text-gray-600 dark:text-gray-300 mb-4 leading-relaxed">
-							{exp.description}
+							{t(`jobDescriptions.${exp.index}.description`)}
 						</p>
 						<div className="flex flex-wrap gap-2">
 							{exp.tags.map((tag, i) => (

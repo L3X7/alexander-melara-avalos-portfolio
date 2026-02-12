@@ -32,18 +32,6 @@
       },
       {
         "description": "Una plataforma logística de economía circular centrada en la sostenibilidad y la recuperación de recursos. Diseñada para optimizar las rutas de recogida de materiales y realizar un seguimiento de las métricas del ciclo de vida."
-      },
-      {
-        "description": "Una plataforma logística de economía circular centrada en la sostenibilidad y la recuperación de recursos. Diseñada para optimizar las rutas de recogida de materiales y realizar un seguimiento de las métricas del ciclo de vida."
-      },
-      {
-        "description": "A Circular Economy Logistics Platform focusing on sustainability and resource recovery. Built to optimize routes for material collection and track lifecycle metrics."
-      },
-      {
-        "description": "A Circular Economy Logistics Platform focusing on sustainability and resource recovery. Built to optimize routes for material collection and track lifecycle metrics."
-      },
-      {
-        "description": "A Circular Economy Logistics Platform focusing on sustainability and resource recovery. Built to optimize routes for material collection and track lifecycle metrics."
       }
     ]
   },
@@ -119,18 +107,42 @@
     "experienceTitle": "De Junior a Semi-Senior",
     "experienceDescription": "Mi trayectoria ha sido definida por una pasión hacia la infraestructura escalable y la tecnología sostenible. Comencé como desarrollador junior experimentando con aplicaciones monolíticas y he navegado a través de las complejidades de la ingeniería en la nube hasta dominar las prácticas de DevOps.",
     "currentFocus": "Enfoque actual",
-    "items": [
+    "currentFocusItems": [
       {
         "title": "Dominio del inglés",
         "subtitle": "Trabajando activamente para obtener el nivel B2 para la colaboración global.",
         "initialText": "B1 Intermedio",
         "finalText": "B2 Intermedio alto"
+      }
+    ],
+    "jobDescriptions": [
+      {
+        "role": "Desarrollador Full-Stack .Net",
+        "description": "Lideré un equipo de +10 desarrolladores usando Scrum, aumentando la velocidad del sprint un 15% mediante revisiones de código y mentoría técnica. Optimicé interfaces de usuario existentes con JavaScript y CSS, mejorando el rendimiento de carga un 60%. Reduje errores críticos un 40% a través de la refactorización de código y la implementación de soluciones efectivas."
       },
       {
-        "title": "",
-        "subtitle": "",
-        "initialText": "",
-        "finalText": ""
+        "role": "Desarrollador Angular",
+        "description": "Desarrollé y desplegué una aplicación web (SPA) con Angular, reduciendo tiempos de carga un 30% y mejorando la retención. Construí APIs RESTful escalables con Spring Boot y Java, capaces de manejar más de 5,000 peticiones por hora durante picos de uso. Colaboré en la automatización de despliegues en Kubernetes, reduciendo el tiempo de despliegue de nuevas funcionalidades un 50%."
+      },
+      {
+        "role": "Desarrollador Web",
+        "description": "Lideré el desarrollo de 3 aplicaciones web responsivas desde cero. Creé una aplicación móvil híbrida con Flutter. Gestioné un equipo multidisciplinario de 5 miembros (desarrolladores y QA), asegurando la entrega puntual del 90% de los hitos del proyecto."
+      },
+      {
+        "role": "Desarrollador y Soporte Técnico",
+        "description": "Implementé un nuevo sistema de gestión de contenidos que permitió al equipo actualizar el sitio web un 80% más rápido sin intervención técnica. Resolví un promedio de 7 tickets de soporte de segundo nivel por semana, manteniendo un 99.5% de tiempo de actividad en aplicaciones críticas de negocio."
+      },
+      {
+        "role": "Desarrollador",
+        "description": "Desarrollé un módulo clave para una aplicación interna usando C# y ASP.NET MVC que automatizó un proceso manual, ahorrando al departamento de RRHH 10 horas de trabajo semanales."
+      },
+      {
+        "role": "Desarrollador y Soporte Técnico",
+        "description": "Desarrollé y mantuve sitios web para clientes locales y brindé soporte técnico, logrando una tasa de satisfacción del cliente del 90%."
+      },
+      {
+        "role": "Desarrollador",
+        "description": "Desarrollé y mantuve sitios web dinámicos utilizando C#, HTML y Visual Basic, asegurando funcionalidad, rendimiento y un diseño amigable para el usuario."
       }
     ]
   },

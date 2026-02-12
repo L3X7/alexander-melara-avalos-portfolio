@@ -24,10 +24,10 @@ export default function AboutPage() {
 			<div className="flex flex-col items-center gap-4">
 				<div className="relative w-32 h-32 rounded-full overflow-hidden border-4 border-slate-800 shadow-xl">
 					<Image
-						src="/images/profile.jpg" // or your external URL
+						src="/images/about-profile.jpg" 
 						alt="Profile Picture"
-						fill // This makes the image fill the parent div
-						className="object-cover" // This creates the "zoom to fill" effect
+						fill
+						className="object-cover"
 					/>
 				</div>
 				<h3 className="text-4xl font-extrabold tracking-tight md:text-5xl text-balance text-center">

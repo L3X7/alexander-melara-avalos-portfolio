@@ -14,17 +14,17 @@ export function CurrentFocusItem({ currentFocus }: CurrentFocusItemProps) {
 	return (
 		<div className="flex flex-col">
 			<h4 className="text-lg font-bold">
-				{t(`items.${currentFocus.index}.title`)}
+				{t(`currentFocusItems.${currentFocus.index}.title`)}
 			</h4>
 			<p className="pt-2 pb-6 text-sm dark:text-slate-400">
-				{t(`items.${currentFocus.index}.subtitle`)}
+				{t(`currentFocusItems.${currentFocus.index}.subtitle`)}
 			</p>
 			<div className="flex flex-row justify-between">
 				<p className="dark:text-slate-300">
-					{t(`items.${currentFocus.index}.initialText`)}
+					{t(`currentFocusItems.${currentFocus.index}.initialText`)}
 				</p>
 				<p className="font-bold">
-					{t(`items.${currentFocus.index}.finalText`)}
+					{t(`currentFocusItems.${currentFocus.index}.finalText`)}
 				</p>
 			</div>
 			<Field>

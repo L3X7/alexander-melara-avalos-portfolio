@@ -32,18 +32,6 @@
       },
       {
         "description": "A Circular Economy Logistics Platform focusing on sustainability and resource recovery. Built to optimize routes for material collection and track lifecycle metrics."
-      },
-      {
-        "description": "A Circular Economy Logistics Platform focusing on sustainability and resource recovery. Built to optimize routes for material collection and track lifecycle metrics."
-      },
-      {
-        "description": "A Circular Economy Logistics Platform focusing on sustainability and resource recovery. Built to optimize routes for material collection and track lifecycle metrics."
-      },
-      {
-        "description": "A Circular Economy Logistics Platform focusing on sustainability and resource recovery. Built to optimize routes for material collection and track lifecycle metrics."
-      },
-      {
-        "description": "A Circular Economy Logistics Platform focusing on sustainability and resource recovery. Built to optimize routes for material collection and track lifecycle metrics."
       }
     ]
   },
@@ -119,18 +107,42 @@
     "experienceTitle": "From Junior to Semi-Senior",
     "experienceDescription": "My journey has been defined by a passion for scalable infrastructure and sustainable tech. Starting as a junior dev tinkering with monolithic apps, I've navigated through the complexities of cloud engineering to master DevOps practices.",
     "currentFocus": "Current focus",
-    "items": [
+    "currentFocusItems": [
       {
         "title": "English Proficiency",
         "subtitle": "Actively working to achieve level B2 for global collaboration.",
         "initialText": "B1 Intermediate",
         "finalText": "B2 Upper Int."
+      }
+    ],
+    "jobDescriptions": [
+      {
+        "role": "Full-Stack .Net Developer",
+        "description": "Lead a team of +10 developers using Scrum, increasing sprint velocity by 15% through code reviews and technical mentoring. Optimized existing user interfaces with JavaScript and CSS, improving loading performance by 60%. Reduced critical errors by 40% through code refactoring and implementing effective solutions."
       },
       {
-        "title": "",
-        "subtitle": "",
-        "initialText": "",
-        "finalText": ""
+        "role": "Angular Developer",
+        "description": "Developed and deployed a web application (SPA) with Angular, reducing user load times by 30% and improving page retention. Built scalable RESTful APIs with Spring Boot and Java, capable of handling over 5,000 requests per hour during peak usage. Collaborated on Kubernetes deployment automation, reducing new feature deployment time by 50%."
+      },
+      {
+        "role": "Web Developer",
+        "description": "Led the development of 3 responsive web applications from scratch. Created a hybrid mobile application with Flutter. Managed a multidisciplinary team of 5 members (developers and QA), ensuring on-time delivery of 90% of project milestones."
+      },
+      {
+        "role": "Developer and Technical Support",
+        "description": "Implemented a new content management system that enabled the team to update the website 80% faster without technical intervention. Resolved an average of 7 second-level support tickets per week, maintaining 99.5% uptime on critical business applications."
+      },
+      {
+        "role": "Developer",
+        "description": "Developed a key module for an internal application using C# and ASP.NET MVC that automated a manual process, saving the HR department 10 hours of work per week."
+      },
+      {
+        "role": "Developer and Technical Support",
+        "description": "Developed and maintained websites for local clients and provided technical support, achieving a 90% customer satisfaction rate."
+      },
+      {
+        "role": "Developer",
+        "description": "Developed and maintained dynamic websites using C#, HTML, and Visual Basic, ensuring functionality, performance, and user-friendly design."
       }
     ]
   },

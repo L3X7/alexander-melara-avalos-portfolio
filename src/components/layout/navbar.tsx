@@ -25,14 +25,11 @@ export function Navbar() {
 		<header className="sticky top-0 w-full border-b border-border/40 bg-background/45 backdrop-blur supports-backdrop-filter:bg-background/60 z-10">
 			<div className="container mx-auto flex h-16 items-center justify-between px-4">
 				<div className="flex items-center gap-2">
-					<div className="flex h-8 w-8 items-center justify-center rounded-lg bg-primary text-primary-foreground">
-						<Terminal className="h-5 w-5" />
-					</div>
 					<Link
 						href="/"
-						className="text-lg font-bold tracking-tight text-foreground"
+						className="flex h-8 w-8 items-center justify-center rounded-lg bg-primary text-primary-foreground"
 					>
-						{t("pageTitle")}
+						<Terminal className="h-5 w-5" />
 					</Link>
 				</div>
 

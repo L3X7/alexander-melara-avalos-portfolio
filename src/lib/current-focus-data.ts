@@ -9,12 +9,4 @@ export const allCurrentFocus: CurrentFocus[] = [
         finalText: "B2 Upper Int.",
         percentage: 50
     },
-    // {
-    //     index: 1,
-    //     title: "English Proficiency",
-    //     description: "Working actively towards professional B2 level certification for global collaboration.",
-    //     initialText: "B1 Intermediate",
-    //     finalText: "B2 Upper Int.",
-    //     percentage: 50
-    // }
 ]

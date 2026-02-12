@@ -23,48 +23,4 @@ export const allProjects: Project[] = [
             "frontend"
         ]
     },
-    {
-        id: 3,
-        title: "C",
-        description:
-            "A Circular Economy Logistics Platform focusing on sustainability and resource recovery. Built to optimize routes for material collection and track lifecycle metrics.",
-        localeKey: "description",
-        tags: [
-            "backend",
-            "frontend"
-        ]
-    },
-    {
-        id: 4,
-        title: "Zirkl0s",
-        description:
-            "A Circular Economy Logistics Platform focusing on sustainability and resource recovery. Built to optimize routes for material collection and track lifecycle metrics.",
-        localeKey: "description",
-        tags: [
-            "backend",
-            "frontend"
-        ]
-    },
-    {
-        id: 5,
-        title: "Service conecta",
-        description:
-            "A Circular Economy Logistics Platform focusing on sustainability and resource recovery. Built to optimize routes for material collection and track lifecycle metrics.",
-        localeKey: "description",
-        tags: [
-            "backend",
-            "frontend"
-        ]
-    },
-    {
-        id: 6,
-        title: "C",
-        description:
-            "A Circular Economy Logistics Platform focusing on sustainability and resource recovery. Built to optimize routes for material collection and track lifecycle metrics.",
-        localeKey: "description",
-        tags: [
-            "backend",
-            "frontend"
-        ]
-    },
 ];
