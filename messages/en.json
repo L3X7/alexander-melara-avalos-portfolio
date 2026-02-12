@@ -113,6 +113,27 @@
       }
     }
   },
+  "AboutSection": {
+    "downloadResume": "Download resume",
+    "emailMe": "Email me",
+    "experienceTitle": "From Junior to Semi-Senior",
+    "experienceDescription": "My journey has been defined by a passion for scalable infrastructure and sustainable tech. Starting as a junior dev tinkering with monolithic apps, I've navigated through the complexities of cloud engineering to master DevOps practices.",
+    "currentFocus": "Current focus",
+    "items": [
+      {
+        "title": "English Proficiency",
+        "subtitle": "Actively working to achieve level B2 for global collaboration.",
+        "initialText": "B1 Intermediate",
+        "finalText": "B2 Upper Int."
+      },
+      {
+        "title": "",
+        "subtitle": "",
+        "initialText": "",
+        "finalText": ""
+      }
+    ]
+  },
   "FooterSection": {
     "title": "Let's build something <highlight>scalable.</highlight>",
     "description": "Ready to modernize your infrastructure? Let's turn complex engineering into a <highlight>competitive advantage</highlight>.",
@@ -130,8 +151,8 @@
   "CommonSection": {
     "search": "Search",
     "all": "All",
-    "Familiar": "Familiar",
-    "Intermediate": "Intermediate",
-    "Advanced": "Advanced"
+    "familiar": "Familiar",
+    "intermediate": "Intermediate",
+    "advanced": "Advanced"
   }
 }
