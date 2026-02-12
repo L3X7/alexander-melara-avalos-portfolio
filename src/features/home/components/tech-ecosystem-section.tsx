@@ -1,8 +1,10 @@
 import { TechCard } from "@/components/ui/tech-card";
 import { Tech } from "@/features/tech-stack/types/tech";
 import { allTechStack } from "@/lib/tech-stack-data";
+import { useTranslations } from "next-intl";
 
-export function TechEcosystemSection() {
+export default function TechEcosystemSection() {
+	const t = useTranslations("HomePage");
 	const techs = allTechStack;
 
 	const categories = [
@@ -35,22 +37,16 @@ export function TechEcosystemSection() {
 			className="scroll-mt-24 container mx-auto flex flex-col w-full py-10 xl:py-15 px-4"
 		>
 			<h3 className="text-4xl font-extrabold tracking-tight md:text-5xl">
-				Core Technologies
+				{t("coreTechnologiesSection.coreTechnologiesTitle")}
 			</h3>
 			<p className="text-muted-foreground text-lg leading-relaxed my-6">
-				Delivering end-to-end solutions by integrating{" "}
-				<span className="text-foreground font-medium">
-					modern frontends
-				</span>{" "}
-				with{" "}
-				<span className="text-foreground font-medium">
-					robust backends
-				</span>{" "}
-				and{" "}
-				<span className="text-foreground font-medium">
-					cloud-native infrastructure
-				</span>
-				.
+				{t.rich("coreTechnologiesSection.coreTechnologiesSubtitle", {
+					highlight: (chunks) => (
+						<span className="text-foreground font-medium">
+							{chunks}
+						</span>
+					),
+				})}
 			</p>
 			{categories.map((category) => {
 				const filteredTechs = techs

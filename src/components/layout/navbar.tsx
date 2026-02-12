@@ -3,7 +3,6 @@
 import { allNavbarOptions } from "@/lib/navbar-data";
 import { cn } from "@/lib/utils";
 import { Terminal } from "lucide-react";
-import { usePathname } from "next/navigation";
 import { MobileNav } from "../ui/mobile-nav";
 import {
 	NavigationMenu,
@@ -13,9 +12,12 @@ import {
 	navigationMenuTriggerStyle,
 } from "../ui/navigation-menu";
 import { ThemeToggle } from "../ui/theme-toggle";
-import { Link } from "@/i18n/routing";
+import { Link, usePathname } from "@/i18n/routing";
+import LanguageSwitcher from "../ui/language-switcher";
+import { useTranslations } from "next-intl";
 
 export function Navbar() {
+	const t = useTranslations('Navbar');
 	const pathname = usePathname();
 	const links = allNavbarOptions;
 
@@ -30,7 +32,7 @@ export function Navbar() {
 						href="/"
 						className="text-lg font-bold tracking-tight text-foreground"
 					>
-						Alex&apos;s Portfolio
+						{t("pageTitle")}
 					</Link>
 				</div>
 
@@ -46,12 +48,11 @@ export function Navbar() {
 										href={item.href}
 										className={cn(
 											navigationMenuTriggerStyle(),
-											// This is the magic line:
 											pathname === item.href &&
 												"bg-accent text-accent-foreground",
 										)}
 									>
-										{item.title}
+										{t(item.localeKey)}
 									</Link>
 								</NavigationMenuLink>
 							</NavigationMenuItem>
@@ -60,12 +61,13 @@ export function Navbar() {
 				</NavigationMenu>
 
 				<div className="flex flex-row">
-					<div className="mr-3 md:mr-0">
-						<ThemeToggle></ThemeToggle>
+					<div className=" flex flex-row gap-0.5 mr-3 md:mr-0">
+						<LanguageSwitcher />
+						<ThemeToggle />
 					</div>
 
 					<div className="md:hidden">
-						<MobileNav links={links}></MobileNav>
+						<MobileNav links={links} />
 					</div>
 				</div>
 			</div>

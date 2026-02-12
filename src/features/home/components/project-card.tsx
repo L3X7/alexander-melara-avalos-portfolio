@@ -2,6 +2,7 @@ import { Badge } from "@/components/ui/badge";
 import { Card, CardContent } from "@/components/ui/card";
 import { Project } from "@/features/projects/types/project";
 import { ArrowUpRight } from "lucide-react";
+import { useTranslations } from "next-intl";
 import Image from "next/image";
 
 interface ProjectCardProps {
@@ -9,6 +10,10 @@ interface ProjectCardProps {
 }
 
 export default function ProjectCard({ project }: ProjectCardProps) {
+	const t = useTranslations("ProjectSection");
+	const index = project.id - 1;
+	const projectLocalization = t(`projects.${index}.${project.localeKey}`);
+
 	return (
 		<Card
 			key={project.id}
@@ -34,11 +39,11 @@ export default function ProjectCard({ project }: ProjectCardProps) {
 				</div>
 				<h3 className="text-xl font-bold mb-2">{project.title}</h3>
 				<p className="mb-6 text-sm leading-relaxed text-gray-600 dark:text-gray-400 transition-colors">
-					{project.description}
+					{projectLocalization}
 				</p>
 				<div className="mt-auto border-t pt-4">
-					<a className="text-sm font-semibold text-primary flex flex-row">
-						View project{" "}
+					<a className="text-sm font-semibold text-primary flex flex-row cursor-pointer w-fit">
+						{t("viewProject")}
 						<ArrowUpRight className="mt-0.5 ml-0.5" size={18} />
 					</a>
 				</div>

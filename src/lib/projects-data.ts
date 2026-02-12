@@ -6,6 +6,7 @@ export const allProjects: Project[] = [
         title: "Zirkl0s",
         description:
             "A Circular Economy Logistics Platform focusing on sustainability and resource recovery. Built to optimize routes for material collection and track lifecycle metrics.",
+        localeKey: "description",
         tags: [
             "backend",
             "frontend"
@@ -16,6 +17,7 @@ export const allProjects: Project[] = [
         title: "Service conecta",
         description:
             "A Circular Economy Logistics Platform focusing on sustainability and resource recovery. Built to optimize routes for material collection and track lifecycle metrics.",
+        localeKey: "description",
         tags: [
             "backend",
             "frontend"
@@ -26,6 +28,7 @@ export const allProjects: Project[] = [
         title: "C",
         description:
             "A Circular Economy Logistics Platform focusing on sustainability and resource recovery. Built to optimize routes for material collection and track lifecycle metrics.",
+        localeKey: "description",
         tags: [
             "backend",
             "frontend"
@@ -36,6 +39,7 @@ export const allProjects: Project[] = [
         title: "Zirkl0s",
         description:
             "A Circular Economy Logistics Platform focusing on sustainability and resource recovery. Built to optimize routes for material collection and track lifecycle metrics.",
+        localeKey: "description",
         tags: [
             "backend",
             "frontend"
@@ -46,6 +50,7 @@ export const allProjects: Project[] = [
         title: "Service conecta",
         description:
             "A Circular Economy Logistics Platform focusing on sustainability and resource recovery. Built to optimize routes for material collection and track lifecycle metrics.",
+        localeKey: "description",
         tags: [
             "backend",
             "frontend"
@@ -56,6 +61,7 @@ export const allProjects: Project[] = [
         title: "C",
         description:
             "A Circular Economy Logistics Platform focusing on sustainability and resource recovery. Built to optimize routes for material collection and track lifecycle metrics.",
+        localeKey: "description",
         tags: [
             "backend",
             "frontend"

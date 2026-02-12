@@ -1,7 +1,54 @@
 {
+  "Navbar": {
+    "pageTitle": "Portafolio de Alex",
+    "home": "Inicio",
+    "projects": "Proyectos",
+    "techStack": "Stack tecnológico",
+    "about": "Acerca de"
+  },
   "HomePage": {
     "heroSection": {
-      "heroSubtitle": "Me especializo en crear infraestructuras sólidas en la nube y aplicaciones de alto rendimiento. Desde complejos backends hasta experiencias de usuario fluidas, diseño software que crece con tu negocio."
+      "heroTitle": "Soluciones para el <highlight>futuro</highlight>.",
+      "heroSubtitle": "Me especializo en crear infraestructuras sólidas en la nube y aplicaciones de alto rendimiento. Desde complejos backends hasta experiencias de usuario fluidas, diseño software que crece con tu negocio.",
+      "heroButton": "Ver proyectos",
+      "heroButtonOutline": "Hablemos"
+    },
+    "featureSection": {
+      "featureTitle": "Proyectos destacados.",
+      "featureSubtitle": "Presentación de soluciones de ingeniería."
+    },
+    "coreTechnologiesSection": {
+      "coreTechnologiesTitle": "Tecnologías principales",
+      "coreTechnologiesSubtitle": "Ofrecemos soluciones integrales mediante la integración de <highlight>interfaces modernas</highlight> con <highlight>backends robustos</highlight> e <highlight>infraestructura nativa en la nube</highlight>."
     }
-  }
+  },
+  "ProjectSection": {
+    "viewProject": "Ver proyecto",
+    "projects": [
+      {
+        "description": "Una plataforma logística de economía circular centrada en la sostenibilidad y la recuperación de recursos. Diseñada para optimizar las rutas de recogida de materiales y realizar un seguimiento de las métricas del ciclo de vida."
+      },
+      {
+        "description": "Una plataforma logística de economía circular centrada en la sostenibilidad y la recuperación de recursos. Diseñada para optimizar las rutas de recogida de materiales y realizar un seguimiento de las métricas del ciclo de vida."
+      },
+      {
+        "description": "Una plataforma logística de economía circular centrada en la sostenibilidad y la recuperación de recursos. Diseñada para optimizar las rutas de recogida de materiales y realizar un seguimiento de las métricas del ciclo de vida."
+      }
+    ]
+  },
+  "FooterSection": {
+    "title": "Construyamos algo <highlight>escalable.</highlight>",
+    "description": "¿Listo para modernizar tu infraestructura? Convirtamos la ingeniería compleja en una <highlight>ventaja competitiva</highlight>.",
+    "navigationTitle": "Navegación",
+    "socialsTitle": "Redes",
+    "copyright": "© 2026 Alex Melara. Todos los derechos reservados.",
+    "builtWith": "Creado con Next.js y Tailwind CSS",
+    "links": {
+      "hero": "Inicio",
+      "projects": "Proyectos",
+      "techStack": "Tecnologías",
+      "about": "Sobre mí"
+    }
+  },
+  "Common": {}
 }
