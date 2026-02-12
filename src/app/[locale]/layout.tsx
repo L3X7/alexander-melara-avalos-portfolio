@@ -5,6 +5,10 @@ import "./globals.css";
 import { Navbar } from "@/components/layout/navbar";
 import { Footer } from "@/components/layout/footer";
 import { TooltipProvider } from "@/components/ui/tooltip";
+import { routing } from "@/i18n/routing";
+import { notFound } from "next/navigation";
+import { getMessages } from "next-intl/server";
+import { NextIntlClientProvider } from "next-intl";
 
 const geistSans = Geist({
 	variable: "--font-geist-sans",
@@ -21,13 +25,23 @@ export const metadata: Metadata = {
 	description: "My porfolio",
 };
 
-export default function RootLayout({
+export default async function RootLayout({
 	children,
+	params,
 }: Readonly<{
 	children: React.ReactNode;
+	params: Promise<{ locale: string }>;
 }>) {
+	const { locale } = await params;
+
+	if (!routing.locales.includes(locale as any)) {
+		notFound();
+	}
+
+	const messages = await getMessages();
+
 	return (
-		<html lang="en" suppressHydrationWarning>
+		<html lang={locale} suppressHydrationWarning>
 			<body
 				className={`${geistSans.variable} ${geistMono.variable} antialiased min-h-screen bg-background font-sans`}
 			>
@@ -37,14 +51,18 @@ export default function RootLayout({
 					enableSystem
 					disableTransitionOnChange
 				>
-					<TooltipProvider>
-						<div className="relative flex min-h-screen flex-col">
-							<Navbar></Navbar>
+					<NextIntlClientProvider messages={messages}>
+						<TooltipProvider>
+							<div className="relative flex min-h-screen flex-col">
+								<Navbar></Navbar>
 
-							<main className="flex-1 w-full">{children}</main>
-							<Footer></Footer>
-						</div>
-					</TooltipProvider>
+								<main className="flex-1 w-full">
+									{children}
+								</main>
+								<Footer></Footer>
+							</div>
+						</TooltipProvider>
+					</NextIntlClientProvider>
 				</ThemeProvider>
 			</body>
 		</html>

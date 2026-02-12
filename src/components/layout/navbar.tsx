@@ -3,7 +3,6 @@
 import { allNavbarOptions } from "@/lib/navbar-data";
 import { cn } from "@/lib/utils";
 import { Terminal } from "lucide-react";
-import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { MobileNav } from "../ui/mobile-nav";
 import {
@@ -14,6 +13,7 @@ import {
 	navigationMenuTriggerStyle,
 } from "../ui/navigation-menu";
 import { ThemeToggle } from "../ui/theme-toggle";
+import { Link } from "@/i18n/routing";
 
 export function Navbar() {
 	const pathname = usePathname();
