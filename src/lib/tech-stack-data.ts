@@ -3,6 +3,7 @@ import { Tech } from "@/features/tech-stack/types/tech";
 export const allTechStack: Tech[] = [
     //BACKEND
     {
+        id: "nestjs",
         category: "backend",
         level: "Intermediate",
         name: "NestJS",
@@ -12,6 +13,7 @@ export const allTechStack: Tech[] = [
 
     },
     {
+        id: "net",
         category: "backend",
         level: "Advanced",
         name: ".NET",
@@ -21,6 +23,7 @@ export const allTechStack: Tech[] = [
 
     },
     {
+        id: "springboot",
         category: "backend",
         level: "Intermediate",
         name: "Spring Boot",
@@ -31,6 +34,7 @@ export const allTechStack: Tech[] = [
     },
     //CLOUD
     {
+        id: "aws",
         category: "cloud",
         level: "Intermediate",
         name: "AWS",
@@ -39,6 +43,7 @@ export const allTechStack: Tech[] = [
 
     },
     {
+        id: "digitalocean",
         category: "cloud",
         level: "Intermediate",
         name: "Digital Ocean",
@@ -48,6 +53,7 @@ export const allTechStack: Tech[] = [
 
     },
     {
+        id: "vercel",
         category: "cloud",
         level: "Intermediate",
         name: "Vercel",
@@ -57,6 +63,7 @@ export const allTechStack: Tech[] = [
 
     },
     {
+        id: "hetzner",
         category: "cloud",
         level: "Familiar",
         name: "Hetzner",
@@ -69,6 +76,7 @@ export const allTechStack: Tech[] = [
     //FROTEND
 
     {
+        id: "nextjs",
         category: "frontend",
         level: "Intermediate",
         name: "Next.js",
@@ -78,6 +86,7 @@ export const allTechStack: Tech[] = [
 
     },
     {
+        id: "angular",
         category: "frontend",
         level: "Advanced",
         name: "Angular",
@@ -89,6 +98,7 @@ export const allTechStack: Tech[] = [
 
     //MOBILE
     {
+        id: "android",
         category: "mobile",
         level: "Intermediate",
         name: "Android (Java/Kotlin)",
@@ -98,6 +108,7 @@ export const allTechStack: Tech[] = [
 
     },
     {
+        id: "flutter",
         category: "mobile",
         level: "Intermediate",
         name: "Flutter",
@@ -106,6 +117,7 @@ export const allTechStack: Tech[] = [
         iconClass: "h-7 w-7 bg-[#02569B] transition-color",
     },
     {
+        id: "reactnative",
         category: "mobile",
         level: "Familiar",
         name: "React Native",
@@ -116,6 +128,7 @@ export const allTechStack: Tech[] = [
 
     //DATABASE
     {
+        id: "sqlserver",
         category: "database",
         level: "Intermediate",
         name: "SQL Server",
@@ -125,6 +138,7 @@ export const allTechStack: Tech[] = [
 
     },
     {
+        id: "postgresql",
         category: "database",
         level: "Intermediate",
         name: "PostgreSQL",
@@ -133,6 +147,7 @@ export const allTechStack: Tech[] = [
         iconClass: "h-7 w-7 bg-[#4169E1] transition-color",
     },
     {
+        id: "mysql",
         category: "database",
         level: "Intermediate",
         name: "MySQL",
@@ -141,6 +156,7 @@ export const allTechStack: Tech[] = [
         iconClass: "h-7 w-7 bg-[#4479A1] transition-color",
     },
     {
+        id: "mongodb",
         category: "database",
         level: "Intermediate",
         name: "MongoDB",
@@ -150,6 +166,7 @@ export const allTechStack: Tech[] = [
     },
     //DEVOPS
     {
+        id: "docker",
         category: "devops",
         level: "Intermediate",
         name: "Docker",
@@ -159,6 +176,7 @@ export const allTechStack: Tech[] = [
 
     },
     {
+        id: "kubernetes",
         category: "devops",
         level: "Intermediate",
         name: "Kubernetes",
@@ -170,6 +188,7 @@ export const allTechStack: Tech[] = [
 
     //UI & DESIGN
     {
+        id: "tailwind",
         category: "ui & design",
         level: "Intermediate",
         name: "Tailwind CSS",
@@ -178,6 +197,7 @@ export const allTechStack: Tech[] = [
         iconClass: "h-7 w-7 bg-[#06B6D4] transition-color",
     },
     {
+        id: "shadcn",
         category: "ui & design",
         level: "Intermediate",
         name: "Shadcn UI",

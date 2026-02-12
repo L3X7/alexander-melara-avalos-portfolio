@@ -1,6 +1,7 @@
 import { TechStackList } from "@/features/tech-stack/tech-stack-list";
 import { TechStackSearchFilter } from "@/features/tech-stack/tech-stack-search-filter";
 import { allTechStack } from "@/lib/tech-stack-data";
+import { getTranslations } from "next-intl/server";
 
 export default async function TechStackPage({
 	searchParams,
@@ -10,6 +11,8 @@ export default async function TechStackPage({
 	const { category } = await searchParams;
 
 	const categoryFilter = category || "";
+
+	const t = await getTranslations("TechStackSection");
 
 	const filteredTechs = allTechStack
 		.filter((tech) => {
@@ -29,11 +32,16 @@ export default async function TechStackPage({
 		<div className="container mx-auto flex flex-col px-4 w-full py-10 md:pt-30 md:pb-20">
 			<div className="flex flex-col gap-4 justify-center text-center">
 				<h3 className="text-4xl font-extrabold tracking-tight md:text-5xl text-balance">
-					Technologies & Tools
+					{t("title")}
 				</h3>
 				<p className="text-muted-foreground text-lg">
-					My preferred stack for building scalable, high-performance
-					applications. Categorized by domain and proficiency.
+					{t.rich("subtitle", {
+						highlight: (chunks) => (
+							<span className="text-foreground font-medium">
+								{chunks}
+							</span>
+						),
+					})}
 				</p>
 			</div>
 			<TechStackSearchFilter></TechStackSearchFilter>

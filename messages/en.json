@@ -47,6 +47,72 @@
       }
     ]
   },
+  "TechStackSection": {
+    "title": "Technologies & Tools",
+    "subtitle": "My preferred stack for building <highlight>scalable, high-performance</highlight> applications. Categorized by domain and proficiency.",
+    "cards": {
+      "nestjs": {
+        "description": "Progressive Node.js framework for scalable server-side apps."
+      },
+      "net": {
+        "description": "High-performance, unified platform for any workload."
+      },
+      "springboot": {
+        "description": "The standard for production-grade enterprise Java."
+      },
+      "aws": {
+        "description": "The leading cloud platform for scalable infrastructure."
+      },
+      "digitalocean": {
+        "description": "Developer-friendly cloud computing."
+      },
+      "vercel": {
+        "description": "The frontend cloud for Next.js and React."
+      },
+      "hetzner": {
+        "description": "Powerful cloud provider with exceptional price-to-performance."
+      },
+      "nextjs": {
+        "description": "The React framework for production-grade apps."
+      },
+      "angular": {
+        "description": "Enterprise-scale framework for robust applications."
+      },
+      "android": {
+        "description": "Native performance with deep system integration."
+      },
+      "flutter": {
+        "description": "High-performance apps from a single codebase."
+      },
+      "reactnative": {
+        "description": "Cross-platform apps using the React ecosystem."
+      },
+      "sqlserver": {
+        "description": "A robust RDBMS within the .NET ecosystem."
+      },
+      "postgresql": {
+        "description": "The world's most advanced open-source database."
+      },
+      "mysql": {
+        "description": "Fast, reliable, and widely-used standard."
+      },
+      "mongodb": {
+        "description": "Flexible, document-based NoSQL scaling."
+      },
+      "docker": {
+        "description": "Standard for containerizing applications."
+      },
+      "kubernetes": {
+        "description": "Orchestration for scaling containerized apps."
+      },
+      "tailwind": {
+        "description": "Utility-first framework for rapid UI development."
+      },
+      "shadcn": {
+        "description": "Re-usable components built with Radix UI and Tailwind."
+      }
+    }
+  },
   "FooterSection": {
     "title": "Let's build something <highlight>scalable.</highlight>",
     "description": "Ready to modernize your infrastructure? Let's turn complex engineering into a <highlight>competitive advantage</highlight>.",
@@ -63,6 +129,9 @@
   },
   "CommonSection": {
     "search": "Search",
-    "all": "All"
+    "all": "All",
+    "Familiar": "Familiar",
+    "Intermediate": "Intermediate",
+    "Advanced": "Advanced"
   }
 }

@@ -1,14 +1,17 @@
+import { BadgeLevelTechStack } from "@/components/ui/badge-level";
 import { Card, CardContent } from "@/components/ui/card";
-import { Tech } from "./types/tech";
 import { IconMask } from "@/components/ui/icon-mask";
 import { TruncatedTooltip } from "@/components/ui/truncated-tooltip";
-import { BadgeLevelTechStack } from "@/components/ui/badge-level";
+import { useTranslations } from "next-intl";
+import { Tech } from "./types/tech";
 
 interface TechStackCardProps {
 	tech: Tech;
 }
 
 export function TechStackCard({ tech }: TechStackCardProps) {
+	const t = useTranslations("TechStackSection");
+
 	return (
 		<Card className="hover:shadow-xl hover:shadow-primary/5 dark:hover:border-primary/500">
 			<CardContent className="flex flex-col gap-4">
@@ -40,7 +43,7 @@ export function TechStackCard({ tech }: TechStackCardProps) {
 					</h3>
 					<TruncatedTooltip
 						className="text-xs text-left text-muted-foreground line-clamp-1"
-						text={tech.description}
+						text={t(`cards.${tech.id}.description`)}
 					></TruncatedTooltip>
 				</div>
 			</CardContent>
