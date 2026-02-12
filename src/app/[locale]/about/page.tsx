@@ -10,11 +10,14 @@ import { ExperienceTimeline } from "@/features/about/components/experience-timel
 import { allCurrentFocus } from "@/lib/current-focus-data";
 import { allExperiences } from "@/lib/experiences-data";
 import { BookUser, Download, Mail } from "lucide-react";
+import { useTranslations } from "next-intl";
 import Image from "next/image";
 
 export default function AboutPage() {
 	const experiences = allExperiences;
 	const currentFocusItems = allCurrentFocus;
+
+	const t = useTranslations("AboutSection");
 
 	return (
 		<div className="container mx-auto flex flex-col px-4 py-10  md:pt-30 md:pb-20">
@@ -34,12 +37,12 @@ export default function AboutPage() {
 					Full Stack Developer
 				</p>
 				<div className="flex flex-row gap-2">
-					<Button>
+					<Button className="cursor-pointer">
 						<Download />
-						Download Resume
+						{t("downloadResume")}
 					</Button>
-					<Button>
-						<Mail /> Email Me
+					<Button className="cursor-pointer">
+						<Mail /> {t("emailMe")}
 					</Button>
 				</div>
 			</div>
@@ -47,20 +50,11 @@ export default function AboutPage() {
 				<div className="lg:w-3/5 flex flex-col">
 					<h3 className="flex-flex-row mb-8 text-lg font-bold">
 						<BookUser className="inline" />{" "}
-						<span>From Junior to Semi-Senior</span>
+						{t("experienceTitle")}
 					</h3>
 					<Card>
 						<CardDescription className="px-4">
-							<p>
-								My journey has been defined by a passion for
-								scalable infrastructure and sustainable tech.
-								Starting as a junior dev tinkering with
-								monolithic apps, I&apos;ve navigated through the
-								complexities of cloud engineering to master
-								DevOps practices. Today, I build systems that
-								are not just efficient, but environmentally
-								conscious.
-							</p>
+							{t("experienceDescription")}
 						</CardDescription>
 					</Card>
 					<div>
@@ -72,8 +66,8 @@ export default function AboutPage() {
 				<div className="lg:w-2/5 flex flex-col">
 					<Card>
 						<CardHeader>
-							<h3 className="text-xl font-bold tracking-wider">
-								CURRENT FOCUS
+							<h3 className="text-xl font-bold tracking-wider uppercase">
+								{t("currentFocus")}
 							</h3>
 						</CardHeader>
 						<CardContent className="flex flex-col gap-4">

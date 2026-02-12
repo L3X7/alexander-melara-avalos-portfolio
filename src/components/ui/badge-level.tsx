@@ -1,6 +1,9 @@
+import { useTranslations } from "next-intl";
 import { Badge } from "./badge";
 
 export function BadgeLevelTechStack({ level }: { level: string }) {
+	const t = useTranslations("CommonSection");
+
 	const getLevelBadgeParams = (level: string): string => {
 		switch (level.toLowerCase()) {
 			case "expert":
@@ -22,7 +25,7 @@ export function BadgeLevelTechStack({ level }: { level: string }) {
 
 	return (
 		<Badge variant="outline" className={getLevelBadgeParams(level)}>
-			{level}
+			{t(`${level.toLocaleLowerCase()}`)}
 		</Badge>
 	);
 }

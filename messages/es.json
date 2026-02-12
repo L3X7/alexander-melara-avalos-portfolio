@@ -113,6 +113,27 @@
       }
     }
   },
+  "AboutSection": {
+    "downloadResume": "Descargar currículum",
+    "emailMe": "Escríbeme",
+    "experienceTitle": "De Junior a Semi-Senior",
+    "experienceDescription": "Mi trayectoria ha sido definida por una pasión hacia la infraestructura escalable y la tecnología sostenible. Comencé como desarrollador junior experimentando con aplicaciones monolíticas y he navegado a través de las complejidades de la ingeniería en la nube hasta dominar las prácticas de DevOps.",
+    "currentFocus": "Enfoque actual",
+    "items": [
+      {
+        "title": "Dominio del inglés",
+        "subtitle": "Trabajando activamente para obtener el nivel B2 para la colaboración global.",
+        "initialText": "B1 Intermedio",
+        "finalText": "B2 Intermedio alto"
+      },
+      {
+        "title": "",
+        "subtitle": "",
+        "initialText": "",
+        "finalText": ""
+      }
+    ]
+  },
   "FooterSection": {
     "title": "Construyamos algo <highlight>escalable.</highlight>",
     "description": "¿Listo para modernizar tu infraestructura? Convirtamos la ingeniería compleja en una <highlight>ventaja competitiva</highlight>.",
@@ -130,8 +151,8 @@
   "CommonSection": {
     "search": "Buscar",
     "all": "All",
-    "Familiar": "Familiar",
-    "Intermediate": "Intermediate",
-    "Advanced": "Advanced"
+    "familiar": "Competente",
+    "intermediate": "Intermedio",
+    "advanced": "Avanzado"
   }
 }
