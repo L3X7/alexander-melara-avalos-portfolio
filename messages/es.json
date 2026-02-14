@@ -8,13 +8,13 @@
   },
   "HomePage": {
     "heroSection": {
-      "heroTitle": "Soluciones para el <highlight>futuro</highlight>.",
+      "heroTitle": "Soluciones para el <highlight>futuro</highlight>",
       "heroSubtitle": "Me especializo en crear infraestructuras sólidas en la nube y aplicaciones de alto rendimiento. Desde complejos backends hasta experiencias de usuario fluidas, diseño software que crece con tu negocio.",
       "heroButton": "Ver proyectos",
       "heroButtonOutline": "Hablemos"
     },
     "featureSection": {
-      "featureTitle": "Proyectos destacados.",
+      "featureTitle": "Proyectos destacados",
       "featureSubtitle": "Presentación de soluciones de ingeniería."
     },
     "coreTechnologiesSection": {
@@ -26,12 +26,64 @@
     "title": "Proyectos",
     "description": "Una recopilación de mi trabajo en arquitectura en la nube, automatización DevOps e ingeniería full-stack. Explore mis contribuciones de código abierto y mis casos prácticos profesionales.",
     "viewProject": "Ver proyecto",
+    "projectInfo": "Información del proyecto",
+    "role": "Rol",
+    "timeline": "Cronología",
+    "teckStack": "Stack tecnológico",
     "projects": [
       {
-        "description": "Una plataforma logística de economía circular centrada en la sostenibilidad y la recuperación de recursos. Diseñada para optimizar las rutas de recogida de materiales y realizar un seguimiento de las métricas del ciclo de vida."
+        "description": "Una plataforma logística de economía circular centrada en la sostenibilidad y la recuperación de recursos. Diseñada para optimizar las rutas de recogida de materiales y realizar un seguimiento de las métricas del ciclo de vida.",
+        "detailTopics": [
+          {
+            "number": "01",
+            "title": "El Desafío",
+            "description": "La economía circular industrial se encuentra actualmente fragmentada, dependiendo de cadenas de suministro opacas y coordinación manual (hojas de cálculo, correos) para comerciar recursos recuperables. Las empresas luchan por encontrar socios confiables para la valorización de residuos, lo que resulta en logística ineficiente y pérdida de ingresos. El objetivo era reemplazar estos procesos desconectados con un mercado unificado y transparente que simplifique las complejas negociaciones B2B y proporcione métricas de sostenibilidad verificables."
+          },
+          {
+            "number": "02",
+            "title": "La Solución",
+            "description": "Diseñe una plataforma B2B robusta centrada en la confianza y la trazabilidad. La arquitectura backend, construida con NestJS y Prisma, gestiona complejas máquinas de estado para negociaciones de múltiples etapas y cumplimiento de pedidos. En el frontend, utilizamos Next.js para crear una interfaz limpia y densa en datos que permite a los gerentes de logística visualizar los flujos de materiales al instante. El sistema abstrae la complejidad de la logística circular, presentando a los usuarios información procesable (actionable insights) sobre tasas de recuperación de recursos y estado de transacciones en tiempo real."
+          }
+        ],
+        "keyFeatures": [
+          {
+            "title": "Negociaciones Inteligentes",
+            "description": "Sistema de ofertas y contraofertas en tiempo real con validación de estado automatizada."
+          },
+          {
+            "title": "Trazabilidad del Ciclo de Vida",
+            "description": "Visibilidad de extremo a extremo de la recuperación de materiales, desde la generación hasta el reprocesamiento."
+          }
+        ]
       },
       {
-        "description": "Una plataforma logística de economía circular centrada en la sostenibilidad y la recuperación de recursos. Diseñada para optimizar las rutas de recogida de materiales y realizar un seguimiento de las métricas del ciclo de vida."
+        "description": "Plataforma de servicios on-demand especializada en conectar profesionales verificados con empresas y usuarios particulares.",
+        "detailTopics": [
+          {
+            "number": "01",
+            "title": "El Desafío",
+            "description": "Encontrar profesionales locales confiables (plomeros, electricistas, tutores) es a menudo una experiencia fragmentada, plagada de desconfianza y comunicación lenta. La falta de precios estandarizados y verificación crea fricción para los usuarios, mientras que los proveedores calificados luchan por mantener visibilidad en un mercado saturado y desorganizado. El objetivo era construir un puente que garantice confianza e inmediatez."
+          },
+          {
+            "number": "02",
+            "title": "La Solución",
+            "description": "Desarrolle Service Conecta como un ecosistema mobile-first utilizando Flutter para una experiencia multiplataforma fluida. La arquitectura se basa en un backend de NestJS con WebSockets para manejar la negociación y las actualizaciones de estado en tiempo real. Implemente un motor de geolocalización preciso que permite a los usuarios rastrear a los proveedores en vivo (similar a las apps de transporte), gestionando servicios en segundo plano complejos para asegurar la eficiencia de la batería en la aplicación del trabajador."
+          }
+        ],
+        "keyFeatures": [
+          {
+            "title": "Geo-Rastreo en Vivo",
+            "description": "Seguimiento de la ubicación del proveedor en tiempo real usando servicios en segundo plano (background services) y renderizado de mapas optimizado."
+          },
+          {
+            "title": "Negociación Instantánea",
+            "description": "Sistema de chat y cotización dentro de la app impulsado por WebSockets para latencia inferior a un segundo."
+          },
+          {
+            "title": "Verificación de Confianza",
+            "description": "Chequeos de identidad automatizados y un sistema de calificación robusto para asegurar la seguridad de la comunidad."
+          }
+        ]
       }
     ]
   },
@@ -151,20 +203,22 @@
     "description": "¿Listo para modernizar tu infraestructura? Convirtamos la ingeniería compleja en una <highlight>ventaja competitiva</highlight>.",
     "navigationTitle": "Navegación",
     "socialsTitle": "Redes",
-    "copyright": "© 2026 Alex Melara. Todos los derechos reservados.",
+    "copyright": "© 2026 Alexander Melara Avalos. Todos los derechos reservados.",
     "builtWith": "Creado con Next.js y Tailwind CSS",
     "links": {
-      "hero": "Inicio",
-      "projects": "Proyectos",
-      "techStack": "Tecnologías",
+      "home": "Inicio",
+      "projects": "Proyectos destacados",
+      "techStack": "Tecnologías principales",
       "about": "Sobre mí"
     }
   },
   "CommonSection": {
     "search": "Buscar",
-    "all": "All",
+    "all": "Todos",
     "familiar": "Competente",
     "intermediate": "Intermedio",
-    "advanced": "Avanzado"
+    "advanced": "Avanzado",
+    "keyFeatures": "Características principales",
+    "interfaceGallery": "Galería de interfaces"
   }
 }
