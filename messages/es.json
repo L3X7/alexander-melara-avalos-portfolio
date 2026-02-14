@@ -1,0 +1,224 @@
+{
+  "Navbar": {
+    "pageTitle": "Portafolio de Alex",
+    "home": "Inicio",
+    "projects": "Proyectos",
+    "techStack": "Stack tecnológico",
+    "about": "Acerca de"
+  },
+  "HomePage": {
+    "heroSection": {
+      "heroTitle": "Soluciones para el <highlight>futuro</highlight>",
+      "heroSubtitle": "Me especializo en crear infraestructuras sólidas en la nube y aplicaciones de alto rendimiento. Desde complejos backends hasta experiencias de usuario fluidas, diseño software que crece con tu negocio.",
+      "heroButton": "Ver proyectos",
+      "heroButtonOutline": "Hablemos"
+    },
+    "featureSection": {
+      "featureTitle": "Proyectos destacados",
+      "featureSubtitle": "Presentación de soluciones de ingeniería."
+    },
+    "coreTechnologiesSection": {
+      "coreTechnologiesTitle": "Tecnologías principales",
+      "coreTechnologiesSubtitle": "Ofrecemos soluciones integrales mediante la integración de <highlight>interfaces modernas</highlight> con <highlight>backends robustos</highlight> e <highlight>infraestructura nativa en la nube</highlight>."
+    }
+  },
+  "ProjectSection": {
+    "title": "Proyectos",
+    "description": "Una recopilación de mi trabajo en arquitectura en la nube, automatización DevOps e ingeniería full-stack. Explore mis contribuciones de código abierto y mis casos prácticos profesionales.",
+    "viewProject": "Ver proyecto",
+    "projectInfo": "Información del proyecto",
+    "role": "Rol",
+    "timeline": "Cronología",
+    "teckStack": "Stack tecnológico",
+    "projects": [
+      {
+        "description": "Una plataforma logística de economía circular centrada en la sostenibilidad y la recuperación de recursos. Diseñada para optimizar las rutas de recogida de materiales y realizar un seguimiento de las métricas del ciclo de vida.",
+        "detailTopics": [
+          {
+            "number": "01",
+            "title": "El Desafío",
+            "description": "La economía circular industrial se encuentra actualmente fragmentada, dependiendo de cadenas de suministro opacas y coordinación manual (hojas de cálculo, correos) para comerciar recursos recuperables. Las empresas luchan por encontrar socios confiables para la valorización de residuos, lo que resulta en logística ineficiente y pérdida de ingresos. El objetivo era reemplazar estos procesos desconectados con un mercado unificado y transparente que simplifique las complejas negociaciones B2B y proporcione métricas de sostenibilidad verificables."
+          },
+          {
+            "number": "02",
+            "title": "La Solución",
+            "description": "Diseñe una plataforma B2B robusta centrada en la confianza y la trazabilidad. La arquitectura backend, construida con NestJS y Prisma, gestiona complejas máquinas de estado para negociaciones de múltiples etapas y cumplimiento de pedidos. En el frontend, utilizamos Next.js para crear una interfaz limpia y densa en datos que permite a los gerentes de logística visualizar los flujos de materiales al instante. El sistema abstrae la complejidad de la logística circular, presentando a los usuarios información procesable (actionable insights) sobre tasas de recuperación de recursos y estado de transacciones en tiempo real."
+          }
+        ],
+        "keyFeatures": [
+          {
+            "title": "Negociaciones Inteligentes",
+            "description": "Sistema de ofertas y contraofertas en tiempo real con validación de estado automatizada."
+          },
+          {
+            "title": "Trazabilidad del Ciclo de Vida",
+            "description": "Visibilidad de extremo a extremo de la recuperación de materiales, desde la generación hasta el reprocesamiento."
+          }
+        ]
+      },
+      {
+        "description": "Plataforma de servicios on-demand especializada en conectar profesionales verificados con empresas y usuarios particulares.",
+        "detailTopics": [
+          {
+            "number": "01",
+            "title": "El Desafío",
+            "description": "Encontrar profesionales locales confiables (plomeros, electricistas, tutores) es a menudo una experiencia fragmentada, plagada de desconfianza y comunicación lenta. La falta de precios estandarizados y verificación crea fricción para los usuarios, mientras que los proveedores calificados luchan por mantener visibilidad en un mercado saturado y desorganizado. El objetivo era construir un puente que garantice confianza e inmediatez."
+          },
+          {
+            "number": "02",
+            "title": "La Solución",
+            "description": "Desarrolle Service Conecta como un ecosistema mobile-first utilizando Flutter para una experiencia multiplataforma fluida. La arquitectura se basa en un backend de NestJS con WebSockets para manejar la negociación y las actualizaciones de estado en tiempo real. Implemente un motor de geolocalización preciso que permite a los usuarios rastrear a los proveedores en vivo (similar a las apps de transporte), gestionando servicios en segundo plano complejos para asegurar la eficiencia de la batería en la aplicación del trabajador."
+          }
+        ],
+        "keyFeatures": [
+          {
+            "title": "Geo-Rastreo en Vivo",
+            "description": "Seguimiento de la ubicación del proveedor en tiempo real usando servicios en segundo plano (background services) y renderizado de mapas optimizado."
+          },
+          {
+            "title": "Negociación Instantánea",
+            "description": "Sistema de chat y cotización dentro de la app impulsado por WebSockets para latencia inferior a un segundo."
+          },
+          {
+            "title": "Verificación de Confianza",
+            "description": "Chequeos de identidad automatizados y un sistema de calificación robusto para asegurar la seguridad de la comunidad."
+          }
+        ]
+      }
+    ]
+  },
+  "TechStackSection": {
+    "title": "Tecnologías y Herramientas",
+    "subtitle": "Mi stack preferido para construir aplicaciones <highlight>escalables y de alto rendimiento</highlight>. Categorizado por dominio y nivel.",
+    "cards": {
+      "nestjs": {
+        "description": "Framework progresivo de Node.js para apps escalables."
+      },
+      "net": {
+        "description": "Plataforma unificada de alto rendimiento para cualquier carga."
+      },
+      "springboot": {
+        "description": "El estándar para Java empresarial en producción."
+      },
+      "aws": {
+        "description": "La plataforma líder en la nube para infraestructura escalable."
+      },
+      "digitalocean": {
+        "description": "Computación en la nube amigable para desarrolladores."
+      },
+      "vercel": {
+        "description": "La nube frontend para Next.js y React."
+      },
+      "hetzner": {
+        "description": "Proveedor potente con relación calidad-precio excepcional."
+      },
+      "nextjs": {
+        "description": "El framework de React para aplicaciones de producción."
+      },
+      "angular": {
+        "description": "Framework de escala empresarial para aplicaciones robustas."
+      },
+      "android": {
+        "description": "Rendimiento nativo con integración profunda del sistema."
+      },
+      "flutter": {
+        "description": "Apps de alto rendimiento desde una única base de código."
+      },
+      "reactnative": {
+        "description": "Apps multiplataforma usando el ecosistema React."
+      },
+      "sqlserver": {
+        "description": "RDBMS robusto dentro del ecosistema .NET."
+      },
+      "postgresql": {
+        "description": "La base de datos open-source más avanzada del mundo."
+      },
+      "mysql": {
+        "description": "Estándar rápido, confiable y ampliamente utilizado."
+      },
+      "mongodb": {
+        "description": "Escalado NoSQL flexible basado en documentos."
+      },
+      "docker": {
+        "description": "Estándar para la contenedorización de aplicaciones."
+      },
+      "kubernetes": {
+        "description": "Orquestación para escalar apps en contenedores."
+      },
+      "tailwind": {
+        "description": "Framework 'utility-first' para desarrollo rápido de UI."
+      },
+      "shadcn": {
+        "description": "Componentes reutilizables con Radix UI y Tailwind."
+      }
+    }
+  },
+  "AboutSection": {
+    "downloadResume": "Descargar currículum",
+    "emailMe": "Escríbeme",
+    "experienceTitle": "De Junior a Semi-Senior",
+    "experienceDescription": "Mi trayectoria ha sido definida por una pasión hacia la infraestructura escalable y la tecnología sostenible. Comencé como desarrollador junior experimentando con aplicaciones monolíticas y he navegado a través de las complejidades de la ingeniería en la nube hasta dominar las prácticas de DevOps.",
+    "currentFocus": "Enfoque actual",
+    "currentFocusItems": [
+      {
+        "title": "Dominio del inglés",
+        "subtitle": "Trabajando activamente para obtener el nivel B2 para la colaboración global.",
+        "initialText": "B1 Intermedio",
+        "finalText": "B2 Intermedio alto"
+      }
+    ],
+    "jobDescriptions": [
+      {
+        "role": "Desarrollador Full-Stack .Net",
+        "description": "Lideré un equipo de +10 desarrolladores usando Scrum, aumentando la velocidad del sprint un 15% mediante revisiones de código y mentoría técnica. Optimicé interfaces de usuario existentes con JavaScript y CSS, mejorando el rendimiento de carga un 60%. Reduje errores críticos un 40% a través de la refactorización de código y la implementación de soluciones efectivas."
+      },
+      {
+        "role": "Desarrollador Angular",
+        "description": "Desarrollé y desplegué una aplicación web (SPA) con Angular, reduciendo tiempos de carga un 30% y mejorando la retención. Construí APIs RESTful escalables con Spring Boot y Java, capaces de manejar más de 5,000 peticiones por hora durante picos de uso. Colaboré en la automatización de despliegues en Kubernetes, reduciendo el tiempo de despliegue de nuevas funcionalidades un 50%."
+      },
+      {
+        "role": "Desarrollador Web",
+        "description": "Lideré el desarrollo de 3 aplicaciones web responsivas desde cero. Creé una aplicación móvil híbrida con Flutter. Gestioné un equipo multidisciplinario de 5 miembros (desarrolladores y QA), asegurando la entrega puntual del 90% de los hitos del proyecto."
+      },
+      {
+        "role": "Desarrollador y Soporte Técnico",
+        "description": "Implementé un nuevo sistema de gestión de contenidos que permitió al equipo actualizar el sitio web un 80% más rápido sin intervención técnica. Resolví un promedio de 7 tickets de soporte de segundo nivel por semana, manteniendo un 99.5% de tiempo de actividad en aplicaciones críticas de negocio."
+      },
+      {
+        "role": "Desarrollador",
+        "description": "Desarrollé un módulo clave para una aplicación interna usando C# y ASP.NET MVC que automatizó un proceso manual, ahorrando al departamento de RRHH 10 horas de trabajo semanales."
+      },
+      {
+        "role": "Desarrollador y Soporte Técnico",
+        "description": "Desarrollé y mantuve sitios web para clientes locales y brindé soporte técnico, logrando una tasa de satisfacción del cliente del 90%."
+      },
+      {
+        "role": "Desarrollador",
+        "description": "Desarrollé y mantuve sitios web dinámicos utilizando C#, HTML y Visual Basic, asegurando funcionalidad, rendimiento y un diseño amigable para el usuario."
+      }
+    ]
+  },
+  "FooterSection": {
+    "title": "Construyamos algo <highlight>escalable.</highlight>",
+    "description": "¿Listo para modernizar tu infraestructura? Convirtamos la ingeniería compleja en una <highlight>ventaja competitiva</highlight>.",
+    "navigationTitle": "Navegación",
+    "socialsTitle": "Redes",
+    "copyright": "© 2026 Alexander Melara Avalos. Todos los derechos reservados.",
+    "builtWith": "Creado con Next.js y Tailwind CSS",
+    "links": {
+      "home": "Inicio",
+      "projects": "Proyectos destacados",
+      "techStack": "Tecnologías principales",
+      "about": "Sobre mí"
+    }
+  },
+  "CommonSection": {
+    "search": "Buscar",
+    "all": "Todos",
+    "familiar": "Competente",
+    "intermediate": "Intermedio",
+    "advanced": "Avanzado",
+    "keyFeatures": "Características principales",
+    "interfaceGallery": "Galería de interfaces"
+  }
+}

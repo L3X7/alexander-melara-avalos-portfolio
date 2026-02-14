@@ -1,0 +1,224 @@
+{
+  "Navbar": {
+    "pageTitle": "Alex's Portfolio",
+    "home": "Home",
+    "projects": "Projects",
+    "techStack": "Tech stack",
+    "about": "About"
+  },
+  "HomePage": {
+    "heroSection": {
+      "heroTitle": "Solutions for the <highlight>future</highlight>",
+      "heroSubtitle": "I specialize in building robust cloud infrastructure and high-performance applications. From complex backends to seamless user experiences, I engineer software that grows with your business.",
+      "heroButton": "View Projects",
+      "heroButtonOutline": "Let's talk"
+    },
+    "featureSection": {
+      "featureTitle": "Featured Projects",
+      "featureSubtitle": "Showcasing engineering solutions."
+    },
+    "coreTechnologiesSection": {
+      "coreTechnologiesTitle": "Core Technologies",
+      "coreTechnologiesSubtitle": "Delivering end-to-end solutions by integrating <highlight>modern frontends</highlight> with <highlight>robust backends</highlight> and <highlight>cloud-native infrastructure</highlight>."
+    }
+  },
+  "ProjectSection": {
+    "title": "Projects",
+    "description": "A collection of my work in cloud architecture, DevOps automation, and full-stack engineering. Explore my open source contributions and professional case studies.",
+    "viewProject": "View project",
+    "projectInfo": "Project info",
+    "role": "Role",
+    "timeline": "Timeline",
+    "teckStack": "Tech stack",
+    "projects": [
+      {
+        "description": "A Circular Economy Logistics Platform focusing on sustainability and resource recovery. Built to optimize routes for material collection and track lifecycle metrics.",
+        "detailTopics": [
+          {
+            "number": "01",
+            "title": "The Challenge",
+            "description": "The industrial circular economy is currently fragmented, relying on opaque supply chains and manual coordination (spreadsheets, emails) to trade recoverable resources. Businesses struggle to find reliable partners for waste valorization, leading to inefficient logistics and lost revenue. The goal was to replace these disconnected processes with a unified, transparent marketplace that simplifies complex B2B negotiations while providing verifiable sustainability metrics."
+          },
+          {
+            "number": "02",
+            "title": "The Solution",
+            "description": "I engineered a robust B2B platform focused on trust and traceability. The backend architecture, built with NestJS and Prisma, manages complex state machines for multi-stage negotiations and order fulfillment. On the frontend, we utilized Next.js to create a clean, data-dense interface that allows logistics managers to visualize material flows instantly. The system abstracts the complexity of circular logistics, presenting users with actionable insights on resource recovery rates and transaction status in real-time."
+          }
+        ],
+        "keyFeatures": [
+          {
+            "title": "Smart Negotiations",
+            "description": "Real-time offer and counter-offer system with automated state validation."
+          },
+          {
+            "title": "Lifecycle Tracking",
+            "description": "End-to-end visibility of material recovery, from generation to re-processing."
+          }
+        ]
+      },
+      {
+        "description": "A specialized service-on-demand platform connecting verified providers with corporate and individual clients.",
+        "detailTopics": [
+          {
+            "number": "01",
+            "title": "The Challenge",
+            "description": "Finding reliable local professionals (plumbers, electricians, tutors) is often a fragmented experience plagued by low trust and slow communication. The lack of standardized pricing and verification creates friction for users, while skilled providers struggle to maintain visibility in a crowded, unorganized market. The objective was to build a bridge that guarantees trust and immediacy."
+          },
+          {
+            "number": "02",
+            "title": "The Solution",
+            "description": "I developed Service Conecta as a mobile-first ecosystem using Flutter for a seamless cross-platform experience. The architecture relies on a NestJS backend with WebSockets to handle real-time negotiation and status updates. I implemented a precise geolocation engine that allows users to track providers in real-time (similar to ride-sharing apps) while managing complex background services to ensure battery efficiency for the worker's app."
+          }
+        ],
+        "keyFeatures": [
+          {
+            "title": "Live Geo-Tracking",
+            "description": "Real-time provider location tracking using background services and optimized map rendering."
+          },
+          {
+            "title": "Instant Negotiation",
+            "description": "In-app chat and quote system powered by WebSockets for sub-second latency."
+          },
+          {
+            "title": "Trusted Verification",
+            "description": "Automated identity checks and a robust rating system to ensure community safety."
+          }
+        ]
+      }
+    ]
+  },
+  "TechStackSection": {
+    "title": "Technologies & Tools",
+    "subtitle": "My preferred stack for building <highlight>scalable, high-performance</highlight> applications. Categorized by domain and proficiency.",
+    "cards": {
+      "nestjs": {
+        "description": "Progressive Node.js framework for scalable server-side apps."
+      },
+      "net": {
+        "description": "High-performance, unified platform for any workload."
+      },
+      "springboot": {
+        "description": "The standard for production-grade enterprise Java."
+      },
+      "aws": {
+        "description": "The leading cloud platform for scalable infrastructure."
+      },
+      "digitalocean": {
+        "description": "Developer-friendly cloud computing."
+      },
+      "vercel": {
+        "description": "The frontend cloud for Next.js and React."
+      },
+      "hetzner": {
+        "description": "Powerful cloud provider with exceptional price-to-performance."
+      },
+      "nextjs": {
+        "description": "The React framework for production-grade apps."
+      },
+      "angular": {
+        "description": "Enterprise-scale framework for robust applications."
+      },
+      "android": {
+        "description": "Native performance with deep system integration."
+      },
+      "flutter": {
+        "description": "High-performance apps from a single codebase."
+      },
+      "reactnative": {
+        "description": "Cross-platform apps using the React ecosystem."
+      },
+      "sqlserver": {
+        "description": "A robust RDBMS within the .NET ecosystem."
+      },
+      "postgresql": {
+        "description": "The world's most advanced open-source database."
+      },
+      "mysql": {
+        "description": "Fast, reliable, and widely-used standard."
+      },
+      "mongodb": {
+        "description": "Flexible, document-based NoSQL scaling."
+      },
+      "docker": {
+        "description": "Standard for containerizing applications."
+      },
+      "kubernetes": {
+        "description": "Orchestration for scaling containerized apps."
+      },
+      "tailwind": {
+        "description": "Utility-first framework for rapid UI development."
+      },
+      "shadcn": {
+        "description": "Re-usable components built with Radix UI and Tailwind."
+      }
+    }
+  },
+  "AboutSection": {
+    "downloadResume": "Download resume",
+    "emailMe": "Email me",
+    "experienceTitle": "From Junior to Semi-Senior",
+    "experienceDescription": "My journey has been defined by a passion for scalable infrastructure and sustainable tech. Starting as a junior dev tinkering with monolithic apps, I've navigated through the complexities of cloud engineering to master DevOps practices.",
+    "currentFocus": "Current focus",
+    "currentFocusItems": [
+      {
+        "title": "English Proficiency",
+        "subtitle": "Actively working to achieve level B2 for global collaboration.",
+        "initialText": "B1 Intermediate",
+        "finalText": "B2 Upper Int."
+      }
+    ],
+    "jobDescriptions": [
+      {
+        "role": "Full-Stack .Net Developer",
+        "description": "Lead a team of +10 developers using Scrum, increasing sprint velocity by 15% through code reviews and technical mentoring. Optimized existing user interfaces with JavaScript and CSS, improving loading performance by 60%. Reduced critical errors by 40% through code refactoring and implementing effective solutions."
+      },
+      {
+        "role": "Angular Developer",
+        "description": "Developed and deployed a web application (SPA) with Angular, reducing user load times by 30% and improving page retention. Built scalable RESTful APIs with Spring Boot and Java, capable of handling over 5,000 requests per hour during peak usage. Collaborated on Kubernetes deployment automation, reducing new feature deployment time by 50%."
+      },
+      {
+        "role": "Web Developer",
+        "description": "Led the development of 3 responsive web applications from scratch. Created a hybrid mobile application with Flutter. Managed a multidisciplinary team of 5 members (developers and QA), ensuring on-time delivery of 90% of project milestones."
+      },
+      {
+        "role": "Developer and Technical Support",
+        "description": "Implemented a new content management system that enabled the team to update the website 80% faster without technical intervention. Resolved an average of 7 second-level support tickets per week, maintaining 99.5% uptime on critical business applications."
+      },
+      {
+        "role": "Developer",
+        "description": "Developed a key module for an internal application using C# and ASP.NET MVC that automated a manual process, saving the HR department 10 hours of work per week."
+      },
+      {
+        "role": "Developer and Technical Support",
+        "description": "Developed and maintained websites for local clients and provided technical support, achieving a 90% customer satisfaction rate."
+      },
+      {
+        "role": "Developer",
+        "description": "Developed and maintained dynamic websites using C#, HTML, and Visual Basic, ensuring functionality, performance, and user-friendly design."
+      }
+    ]
+  },
+  "FooterSection": {
+    "title": "Let's build something <highlight>scalable.</highlight>",
+    "description": "Ready to modernize your infrastructure? Let's turn complex engineering into a <highlight>competitive advantage</highlight>.",
+    "navigationTitle": "Navigation",
+    "socialsTitle": "Socials",
+    "copyright": "© 2026 Alexander Melara Avalos. All rights reserved.",
+    "builtWith": "Built with Next.js & Tailwind CSS",
+    "links": {
+      "home": "Solutions for the future",
+      "projects": "Featured Projects",
+      "techStack": "Core Technologies",
+      "about": "About"
+    }
+  },
+  "CommonSection": {
+    "search": "Search",
+    "all": "All",
+    "familiar": "Familiar",
+    "intermediate": "Intermediate",
+    "advanced": "Advanced",
+    "keyFeatures": "Key Features",
+    "interfaceGallery": "Interface Gallery"
+  }
+}

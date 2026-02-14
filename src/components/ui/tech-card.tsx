@@ -3,8 +3,8 @@ import { IconMask } from "@/components/ui/icon-mask";
 
 interface TechCardProps {
 	name: string;
-	description: string;
-	iconClass: string;
+	description?: string;
+	iconClass?: string;
 	iconSrc?: string;
 	nameTextColor?: string;
 }
@@ -21,7 +21,7 @@ export function TechCard({
 			<CardContent className="flex flex-row items-center gap-4 p-2">
 				{/* The Icon */}
 				<div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-muted/50">
-					{iconSrc ? (
+					{iconSrc && iconClass ? (
 						<IconMask src={iconSrc} className={iconClass} />
 					) : (
 						<span
@@ -40,9 +40,9 @@ export function TechCard({
 					<h4 className="text-sm font-bold text-foreground">
 						{name}
 					</h4>
-					<p className="text-xs text-muted-foreground line-clamp-1">
+					{/* <p className="text-xs text-muted-foreground line-clamp-1">
 						{description}
-					</p>
+					</p> */}
 				</div>
 			</CardContent>
 		</Card>
