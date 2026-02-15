@@ -4,7 +4,8 @@
     "home": "Home",
     "projects": "Projects",
     "techStack": "Tech stack",
-    "about": "About"
+    "about": "About",
+    "navigationMenu": "Navigation Menu"
   },
   "HomePage": {
     "heroSection": {
