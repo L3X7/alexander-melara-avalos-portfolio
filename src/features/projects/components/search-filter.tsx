@@ -37,12 +37,12 @@ export function SearchFilter() {
     replace(`${pathname}?${params.toString()}`);
   }
 
-  const categories = ["All", "Backend", "Frontend", "Mobile"];
+  const categories = ["All", "Backend", "Cloud", "Frontend", "Mobile"];
 
   return (
-    <div className="flex flex-col sm:flex-row gap-4 mt-12 mb-8">
-      <div className="bg-border rounded-lg flex flex-row justify-between gap-4 p-3 w-full">
-        <InputGroup className="max-w-xs shadow-none">
+    <div className="gap-4 mt-12 mb-8">
+      <div className="lg:bg-border rounded-lg flex flex-col lg:flex-row lg:justify-between gap-4 p-3 w-full">
+        <InputGroup className="lg:max-w-xs shadow-none">
           <InputGroupAddon>
             <SearchIcon />
           </InputGroupAddon>
@@ -52,19 +52,21 @@ export function SearchFilter() {
             defaultValue={searchParams.get("")?.toString()}
           />
         </InputGroup>
-        <div className="flex flex-row gap-2">
-          {categories.map((cat) => (
-            <Button
-              className="border-2 border-transparent active:border-white"
-              key={cat}
-              variant={
-                searchParams.get("category") === cat ? "default" : "outline"
-              }
-              onClick={() => handleCategory(cat)}
-            >
-              {cat}
-            </Button>
-          ))}
+        <div className="w-full overflow-x-auto">
+          <div className="flex flex-row lg:justify-end gap-2">
+            {categories.map((cat) => (
+              <Button
+                className="border-2 border-transparent active:border-white"
+                key={cat}
+                variant={
+                  searchParams.get("category") === cat ? "default" : "outline"
+                }
+                onClick={() => handleCategory(cat)}
+              >
+                {cat}
+              </Button>
+            ))}
+          </div>
         </div>
       </div>
     </div>
