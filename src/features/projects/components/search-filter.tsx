@@ -52,11 +52,11 @@ export function SearchFilter() {
             defaultValue={searchParams.get("")?.toString()}
           />
         </InputGroup>
-        <div className="w-full overflow-x-auto">
-          <div className="flex flex-row lg:justify-end gap-2">
+        <div className="w-full overflow-x-auto pb-2 lg:pb-0">
+          <div className="flex flex-row lg:justify-end gap-4 mb-1 lg:mb-0">
             {categories.map((cat) => (
               <Button
-                className="border-2 border-transparent active:border-white"
+                className="border-2 border-transparent active:border-white cursor-pointer"
                 key={cat}
                 variant={
                   searchParams.get("category") === cat ? "default" : "outline"
