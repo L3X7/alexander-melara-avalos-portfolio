@@ -4,7 +4,8 @@
     "home": "Inicio",
     "projects": "Proyectos",
     "techStack": "Stack tecnológico",
-    "about": "Acerca de"
+    "about": "Acerca de",
+    "navigationMenu": "Menú de navegación"
   },
   "HomePage": {
     "heroSection": {
