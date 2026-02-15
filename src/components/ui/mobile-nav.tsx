@@ -40,7 +40,7 @@ export function MobileNav({ links }: MobileNavProps) {
         <SheetHeader>
           <SheetTitle className="text-left">{t("navigationMenu")}</SheetTitle>
         </SheetHeader>
-        <div className="flex flex-col gap-1 mt-8">
+        <div className="flex flex-col gap-4 mt-8">
           {links.map((item, index) => (
             <Link
               className={cn(
@@ -51,6 +51,7 @@ export function MobileNav({ links }: MobileNavProps) {
               )}
               key={index}
               href={item.href}
+              onClick={() => setOpen(false)}
             >
               {t(item.localeKey)}
             </Link>

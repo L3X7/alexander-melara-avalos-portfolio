@@ -90,7 +90,7 @@ export function Footer() {
         </div>
       </div>
       <div className="border-t border-border/40 text-sm text-muted-foreground">
-        <div className="container mx-auto flex flex-col md:flex-row justify-between items-center gap-4 py-4 px-4">
+        <div className="container mx-auto flex flex-col md:flex-row justify-between items-center gap-4 py-4 px-4 text-center">
           <p>{t("copyright")}</p>
           <p>{t("builtWith")}</p>
         </div>
