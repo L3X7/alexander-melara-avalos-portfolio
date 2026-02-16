@@ -40,9 +40,13 @@ export default function ProjectDetail() {
           />
           <KeyFeatures
             projectId={project.id}
+            keyFeaturesNumberOrder={project.keyFeaturesNumberOrder}
             keyFeatures={project.keyFeatures}
           />
-          <ProjectGallery images={project.images} />
+          <ProjectGallery
+            images={project.images}
+            imagesNumberOrder={project.imagesNumberOrder}
+          />
         </div>
         <aside className="lg:col-span-4 xl:col-span-4 relative hidden lg:block">
           <ProjectInfo

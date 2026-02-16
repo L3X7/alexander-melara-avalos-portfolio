@@ -3,33 +3,33 @@ import { Tech } from "@/features/tech-stack/types/tech";
 import { allTechStack } from "@/lib/tech-stack-data";
 import { useTranslations } from "next-intl";
 
+const categories = [
+  {
+    id: "cloud-devops",
+    label: "CLOUD & DEVOPS",
+    filter: (tech: Tech) =>
+      ["cloud", "devops"].includes(tech.category.toLowerCase()),
+  },
+  {
+    id: "backend",
+    label: "BACKEND",
+    filter: (tech: Tech) => tech.category.toLowerCase() === "backend",
+  },
+  {
+    id: "frontend",
+    label: "FRONTEND",
+    filter: (tech: Tech) => tech.category.toLowerCase() === "frontend",
+  },
+  {
+    id: "mobile",
+    label: "MOBILE",
+    filter: (tech: Tech) => tech.category.toLowerCase() === "mobile",
+  },
+] as const;
+
 export function TechEcosystemSection() {
   const t = useTranslations("HomePage");
   const techs = allTechStack;
-
-  const categories = [
-    {
-      id: "cloud-devops",
-      label: "CLOUD & DEVOPS",
-      filter: (tech: Tech) =>
-        ["cloud", "devops"].includes(tech.category.toLowerCase()),
-    },
-    {
-      id: "backend",
-      label: "BACKEND",
-      filter: (tech: Tech) => tech.category.toLowerCase() === "backend",
-    },
-    {
-      id: "frontend",
-      label: "FRONTEND",
-      filter: (tech: Tech) => tech.category.toLowerCase() === "frontend",
-    },
-    {
-      id: "mobile",
-      label: "MOBILE",
-      filter: (tech: Tech) => tech.category.toLowerCase() === "mobile",
-    },
-  ];
 
   return (
     <div
@@ -68,7 +68,6 @@ export function TechEcosystemSection() {
                     <TechCard
                       key={tc.name}
                       name={tc.name}
-                      description={tc.description}
                       nameTextColor={tc.nameTextColor}
                     />
                   );
@@ -78,7 +77,6 @@ export function TechEcosystemSection() {
                   <TechCard
                     key={tc.name}
                     name={tc.name}
-                    description={tc.description}
                     iconSrc={tc.iconSrc}
                     iconClass={tc.iconClass}
                   />

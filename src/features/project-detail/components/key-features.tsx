@@ -5,10 +5,11 @@ import { useTranslations } from "next-intl";
 
 interface KeyFeaturesProps {
   projectId: number;
+  keyFeaturesNumberOrder: string;
   keyFeatures: KeyFeature[];
 }
 
-export function KeyFeatures({ projectId, keyFeatures }: KeyFeaturesProps) {
+export function KeyFeatures({ projectId, keyFeaturesNumberOrder, keyFeatures, }: KeyFeaturesProps) {
   const index = projectId - 1;
   const t = useTranslations(`ProjectSection.projects.${index}`);
   const c = useTranslations(`CommonSection`);
@@ -16,7 +17,7 @@ export function KeyFeatures({ projectId, keyFeatures }: KeyFeaturesProps) {
   return (
     <div className="group">
       <div className="flex items-baseline space-x-4 mb-4">
-        <span className="text-primary font-mono text-sm">03</span>
+        <span className="text-primary font-mono text-sm">{keyFeaturesNumberOrder}</span>
         <h2 className="text-3xl font-bold text-zinc-900 dark:text-zinc-100">
           {c("keyFeatures")}
         </h2>

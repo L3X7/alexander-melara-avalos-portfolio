@@ -1,3 +1,4 @@
+"use client";
 import { Button } from "@/components/ui/button";
 import {
   Card,
@@ -22,7 +23,7 @@ export default function AboutPage() {
   return (
     <div className="container mx-auto flex flex-col px-4 py-10  md:pt-30 md:pb-20">
       <div className="flex flex-col items-center gap-4">
-        <div className="relative w-32 h-32 rounded-full overflow-hidden border-4 border-slate-800 shadow-xl">
+        <div className="relative w-32 h-32 rounded-full overflow-hidden border-4 border-slate-800 dark:border-slate-600 shadow-xl">
           <Image
             src="/images/about-profile.jpg"
             alt="Profile Picture"
@@ -33,7 +34,7 @@ export default function AboutPage() {
         <h3 className="text-4xl font-extrabold tracking-tight md:text-5xl text-balance text-center">
           Alexander Melara Avalos
         </h3>
-        <p className="text-muted-foreground text-lg max-w-xlleading-relaxed">
+        <p className="text-muted-foreground text-lg max-w-xl leading-relaxed">
           Full Stack Developer
         </p>
         <div className="flex flex-row gap-2">
@@ -56,7 +57,7 @@ export default function AboutPage() {
       </div>
       <div className="flex flex-col lg:flex-row gap-8 lg:gap-10 pt-8">
         <div className="lg:w-3/5 flex flex-col">
-          <h3 className="flex-flex-row mb-8 text-lg font-bold">
+          <h3 className="mb-8 text-lg font-bold">
             <BookUser className="inline" /> {t("experienceTitle")}
           </h3>
           <Card>

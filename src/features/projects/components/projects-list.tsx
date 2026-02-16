@@ -10,7 +10,7 @@ interface ProjectsListProps {
 export function ProjectsList({ projects }: ProjectsListProps) {
   if (projects.length === 0) {
     return (
-      <div className="text-center py-20 text-muted-foreground">
+      <div className="text-center py-10 text-muted-foreground">
         No projects found matching your criteria.
       </div>
     );

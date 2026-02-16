@@ -60,11 +60,11 @@ export function HeroSection() {
         </motion.h3>
         <motion.p
           variants={itemVariants}
-          className="text-muted-foreground text-lg max-w-xl my-6 leading-relaxed mb-8"
+          className="text-muted-foreground text-lg max-w-xl mt-6 leading-relaxed mb-8"
         >
           {t("heroSection.heroSubtitle")}
         </motion.p>
-        <motion.div className="flex flex-col sm:flex-row gap-3">
+        <motion.div variants={itemVariants} className="flex flex-col sm:flex-row gap-3">
           <Button
             size="lg"
             className="w-full sm:w-auto gap-2 cursor-pointer"

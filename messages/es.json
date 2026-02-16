@@ -30,7 +30,7 @@
     "projectInfo": "Información del proyecto",
     "role": "Rol",
     "timeline": "Cronología",
-    "teckStack": "Stack tecnológico",
+    "techStack": "Stack tecnológico",
     "projects": [
       {
         "description": "Una plataforma logística de economía circular centrada en la sostenibilidad y la recuperación de recursos. Diseñada para optimizar las rutas de recogida de materiales y realizar un seguimiento de las métricas del ciclo de vida.",

@@ -11,7 +11,9 @@ export interface Project {
     role: string;
     timeline: string;
     tags: string[];
-    images: ImageProject[];
     detailTopics: DetailTopic[];
+    keyFeaturesNumberOrder: string;
     keyFeatures: KeyFeature[];
+    imagesNumberOrder: string;
+    images: ImageProject[];
 }

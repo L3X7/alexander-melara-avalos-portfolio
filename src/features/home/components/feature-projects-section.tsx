@@ -1,3 +1,5 @@
+"use client";
+
 import { Project } from "@/features/projects/types/project";
 import { allProjects } from "@/lib/projects-data";
 
