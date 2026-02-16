@@ -1,4 +1,10 @@
-import { usePathname } from "next/navigation";
+import { NavbarOption } from "@/features/home/components/types/navbar-option";
+import { Link, usePathname } from "@/i18n/routing";
+import { cn } from "@/lib/utils";
+import { MenuIcon } from "lucide-react";
+import { useTranslations } from "next-intl";
+import { useState } from "react";
+import { Button } from "./button";
 import {
   Sheet,
   SheetContent,
@@ -6,13 +12,6 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "./sheet";
-import { useState } from "react";
-import { Button } from "./button";
-import { MenuIcon } from "lucide-react";
-import { NavbarOption } from "@/features/home/components/types/navbar-option";
-import { cn } from "@/lib/utils";
-import { useTranslations } from "next-intl";
-import { Link } from "@/i18n/routing";
 
 interface MobileNavProps {
   links: NavbarOption[];
@@ -40,11 +39,11 @@ export function MobileNav({ links }: MobileNavProps) {
         <SheetHeader>
           <SheetTitle className="text-left">{t("navigationMenu")}</SheetTitle>
         </SheetHeader>
-        <div className="flex flex-col gap-4 mt-8">
+        <div className="flex flex-col gap-2 mt-8">
           {links.map((item) => (
             <Link
               className={cn(
-                "block px-4 text-sm font-medium transition-colors hover:text-primary",
+                "block px-4 py-2 text-sm font-medium hover:text-primary",
                 pathname === item.href
                   ? "text-primary bg-primary/10 rounded-md"
                   : "text-muted-foreground",
