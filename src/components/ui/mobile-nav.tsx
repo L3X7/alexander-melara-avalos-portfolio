@@ -41,7 +41,7 @@ export function MobileNav({ links }: MobileNavProps) {
           <SheetTitle className="text-left">{t("navigationMenu")}</SheetTitle>
         </SheetHeader>
         <div className="flex flex-col gap-4 mt-8">
-          {links.map((item, index) => (
+          {links.map((item) => (
             <Link
               className={cn(
                 "block px-4 text-sm font-medium transition-colors hover:text-primary",
@@ -49,7 +49,7 @@ export function MobileNav({ links }: MobileNavProps) {
                   ? "text-primary bg-primary/10 rounded-md"
                   : "text-muted-foreground",
               )}
-              key={index}
+              key={item.key}
               href={item.href}
               onClick={() => setOpen(false)}
             >

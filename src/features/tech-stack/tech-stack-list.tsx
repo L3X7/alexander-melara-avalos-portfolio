@@ -2,6 +2,7 @@
 import { motion, Variants } from "motion/react";
 import { TechStackCard } from "./tech-stack-card";
 import { Tech } from "./types/tech";
+import { useMemo } from "react";
 
 const containerVariants: Variants = {
   hidden: { opacity: 0 },
@@ -31,15 +32,15 @@ interface TechStackListProps {
 }
 
 export function TechStackList({ techs }: TechStackListProps) {
+  const listKey = useMemo(() => techs.map((t) => t.name).join("-"), [techs]);
+
   if (techs.length === 0) {
     return (
-      <div className="text-center py-20 text-muted-foreground">
+      <div className="text-center py-10 text-muted-foreground">
         No techs found matching your criteria.
       </div>
     );
   }
-
-  const listKey = techs.map((t) => t.name).join("-");
 
   return (
     <motion.div

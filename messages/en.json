@@ -30,7 +30,7 @@
     "projectInfo": "Project info",
     "role": "Role",
     "timeline": "Timeline",
-    "teckStack": "Tech stack",
+    "techStack": "Tech stack",
     "projects": [
       {
         "description": "A Circular Economy Logistics Platform focusing on sustainability and resource recovery. Built to optimize routes for material collection and track lifecycle metrics.",

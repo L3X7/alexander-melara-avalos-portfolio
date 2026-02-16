@@ -37,7 +37,7 @@ export function ProjectInfo({ role, timeline, tags }: ProjectInfoProps) {
           </div>
           <div>
             <h4 className="text-sm font-medium text-zinc-500 mb-1.5">
-              {t("teckStack")}
+              {t("techStack")}
             </h4>
             <div className="flex flex-wrap gap-2">
               {tags.map((tag) => (

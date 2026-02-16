@@ -8,7 +8,9 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 :root {
-  /* LIGHT MODE*/ /* Pure White */ /* Deep Navy/Black Text */
+  /* LIGHT MODE*/
+  /* Pure White */
+  /* Deep Navy/Black Text */
 
   --card: oklch(1 0 0);
   --card-foreground: oklch(0.145 0 0);
@@ -16,13 +18,16 @@
   --popover: oklch(1 0 0);
   --popover-foreground: oklch(0.145 0 0);
 
-  --primary: oklch(0.205 0 0); /* Vibrant Blue (matches Docker/K8s vibes) */
-  --primary-foreground: oklch(0.985 0 0); /* White text on blue */
+  --primary: oklch(0.205 0 0);
+  /* Vibrant Blue (matches Docker/K8s vibes) */
+  --primary-foreground: oklch(0.985 0 0);
+  /* White text on blue */
 
   --secondary: oklch(0.97 0 0);
   --secondary-foreground: oklch(0.205 0 0);
 
-  --muted: oklch(0.97 0 0); /* Light Gray for backgrounds/sections */
+  --muted: oklch(0.97 0 0);
+  /* Light Gray for backgrounds/sections */
   --muted-foreground: oklch(0.556 0 0);
 
   --accent: oklch(0.97 0 0);
@@ -31,7 +36,8 @@
   --destructive: oklch(0.577 0.245 27.325);
   --destructive-foreground: oklch(0.985 0 0);
 
-  --border: oklch(0.922 0 0); /* Subtle borders */
+  --border: oklch(0.922 0 0);
+  /* Subtle borders */
   --input: oklch(0.922 0 0);
   --ring: oklch(0.708 0 0);
 
@@ -74,8 +80,10 @@
 
 .dark {
   /* DARK MODE (Deep Navy) */
-  --background: oklch(0.145 0 0); /* #020817 */
-  --foreground: oklch(0.985 0 0); /* #f8fafc */
+  --background: oklch(0.145 0 0);
+  /* #020817 */
+  --foreground: oklch(0.985 0 0);
+  /* #f8fafc */
 
   --card: oklch(0.205 0 0);
   --card-foreground: oklch(0.985 0 0);
@@ -83,20 +91,22 @@
   --popover: oklch(0.205 0 0);
   --popover-foreground: oklch(0.985 0 0);
 
-  --primary: oklch(0.922 0 0); /* Brighter Blue for Dark Mode */
+  --primary: oklch(0.922 0 0);
+  /* Brighter Blue for Dark Mode */
   --primary-foreground: oklch(0.205 0 0);
 
   --secondary: oklch(0.269 0 0);
   --secondary-foreground: oklch(0.985 0 0);
 
-  --muted: oklch(0.269 0 0); /* Darker Gray for muted text */
+  --muted: oklch(0.269 0 0);
+  /* Darker Gray for muted text */
   --muted-foreground: oklch(0.708 0 0);
 
   --accent: oklch(0.269 0 0);
   --accent-foreground: oklch(0.985 0 0);
 
   --destructive: oklch(0.704 0.191 22.216);
-  --destructive-foreground: 210 40% 98%;
+  --destructive-foreground: oklch(0.985 0 0);
 
   --border: oklch(0.269 0 0);
   --input: oklch(0.269 0 0);
@@ -188,6 +198,7 @@
   * {
     @apply border-border;
   }
+
   body {
     @apply bg-background text-foreground;
     font-feature-settings:
@@ -210,15 +221,19 @@
 /* -------------------------------------------------------------------------- */
 
 @layer utilities {
+
   /* 1. The Scrollbar Container */
   ::-webkit-scrollbar {
-    width: 10px; /* Width of the vertical scrollbar */
-    height: 10px; /* Height of the horizontal scrollbar */
+    width: 10px;
+    /* Width of the vertical scrollbar */
+    height: 10px;
+    /* Height of the horizontal scrollbar */
   }
 
   /* 2. The Track (Background) */
   ::-webkit-scrollbar-track {
-    background: transparent; /* Keeps it clean/invisible */
+    background: transparent;
+    /* Keeps it clean/invisible */
   }
 
   /* 3. The Handle (The part you drag) */
@@ -234,6 +249,7 @@
 
   /* 4. Hover State */
   ::-webkit-scrollbar-thumb:hover {
-    @apply bg-muted-foreground/50; /* Darker when you grab it */
+    @apply bg-muted-foreground/50;
+    /* Darker when you grab it */
   }
 }

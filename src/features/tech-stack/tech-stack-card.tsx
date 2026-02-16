@@ -13,7 +13,7 @@ export function TechStackCard({ tech }: TechStackCardProps) {
   const t = useTranslations("TechStackSection");
 
   return (
-    <Card className="hover:shadow-xl hover:shadow-primary/5 dark:hover:border-primary/500">
+    <Card className="hover:shadow-xl hover:shadow-primary/5 dark:hover:border-primary/50">
       <CardContent className="flex flex-col gap-4">
         <div className="flex flex-row justify-between">
           <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-muted/50">

@@ -9,6 +9,7 @@ import {
 import { SearchIcon } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
+import { useCallback, useRef } from "react";
 
 export function SearchFilter() {
   const searchParams = useSearchParams();
@@ -17,15 +18,23 @@ export function SearchFilter() {
 
   const t = useTranslations("CommonSection");
 
-  function handleSearch(term: string) {
-    const params = new URLSearchParams(searchParams);
-    if (term) {
-      params.set("search", term);
-    } else {
-      params.delete("search");
-    }
-    replace(`${pathname}?${params.toString()}`);
-  }
+  const debounceRef = useRef<ReturnType<typeof setTimeout>>(null);
+
+  const handleSearch = useCallback(
+    (term: string) => {
+      if (debounceRef.current) clearTimeout(debounceRef.current);
+      debounceRef.current = setTimeout(() => {
+        const params = new URLSearchParams(searchParams);
+        if (term) {
+          params.set("search", term);
+        } else {
+          params.delete("search");
+        }
+        replace(`${pathname}?${params.toString()}`);
+      }, 300);
+    },
+    [searchParams, pathname, replace],
+  );
 
   function handleCategory(category: string) {
     const params = new URLSearchParams(searchParams);
@@ -56,7 +65,7 @@ export function SearchFilter() {
           <div className="flex flex-row lg:justify-end gap-4 mb-1 lg:mb-0">
             {categories.map((cat) => (
               <Button
-                className="border-2 border-transparent active:border-white cursor-pointer"
+                className="border-2 border-transparent cursor-pointer"
                 key={cat}
                 variant={
                   searchParams.get("category") === cat ? "default" : "outline"
