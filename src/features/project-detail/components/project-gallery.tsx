@@ -37,7 +37,7 @@ export function ProjectGallery({ images }: ProjectGalleryProps) {
             <div className="absolute inset-0 bg-linear-to-t from-black/60 to-transparent z-10 opacity-60 group-hover:opacity-40 transition-opacity duration-500"></div>
             <Image
               fill
-              alt="Dark dashboard interface with neon data charts"
+              alt={image.title}
               className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700 ease-out"
               data-alt="Futuristic dark financial dashboard with glowing blue graphs"
               src={image.url}

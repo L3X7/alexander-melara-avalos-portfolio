@@ -49,7 +49,7 @@ export function SearchFilter() {
           <InputGroupInput
             placeholder={`${t("search")}...`}
             onChange={(e) => handleSearch(e.target.value)}
-            defaultValue={searchParams.get("")?.toString()}
+            defaultValue={searchParams.get("search")?.toString()}
           />
         </InputGroup>
         <div className="w-full overflow-x-auto pb-2 lg:pb-0">

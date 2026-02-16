@@ -33,7 +33,7 @@ export default function AboutPage() {
         <h3 className="text-4xl font-extrabold tracking-tight md:text-5xl text-balance text-center">
           Alexander Melara Avalos
         </h3>
-        <p className="text-muted-foreground text-lg max-w-xlleading-relaxed">
+        <p className="text-muted-foreground text-lg max-w-xl leading-relaxed">
           Full Stack Developer
         </p>
         <div className="flex flex-row gap-2">
@@ -56,7 +56,7 @@ export default function AboutPage() {
       </div>
       <div className="flex flex-col lg:flex-row gap-8 lg:gap-10 pt-8">
         <div className="lg:w-3/5 flex flex-col">
-          <h3 className="flex-flex-row mb-8 text-lg font-bold">
+          <h3 className="mb-8 text-lg font-bold">
             <BookUser className="inline" /> {t("experienceTitle")}
           </h3>
           <Card>
