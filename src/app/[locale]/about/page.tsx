@@ -8,11 +8,11 @@ import {
 } from "@/components/ui/card";
 import { CurrentFocusItem } from "@/features/about/components/current-focus-item";
 import { ExperienceTimeline } from "@/features/about/components/experience-timeline";
+import { ProfileImage } from "@/features/about/components/profile-image";
 import { allCurrentFocus } from "@/lib/current-focus-data";
 import { allExperiences } from "@/lib/experiences-data";
 import { BookUser, Download, Mail } from "lucide-react";
 import { useTranslations } from "next-intl";
-import Image from "next/image";
 
 export default function AboutPage() {
   const experiences = allExperiences;
@@ -23,14 +23,7 @@ export default function AboutPage() {
   return (
     <div className="container mx-auto flex flex-col px-4 py-10  md:pt-30 md:pb-20">
       <div className="flex flex-col items-center gap-4">
-        <div className="relative w-32 h-32 rounded-full overflow-hidden border-4 border-slate-800 dark:border-slate-600 shadow-xl">
-          <Image
-            src="/images/about-profile.jpg"
-            alt="Profile Picture"
-            fill
-            className="object-cover"
-          />
-        </div>
+        <ProfileImage />
         <h3 className="text-4xl font-extrabold tracking-tight md:text-5xl text-balance text-center">
           Alexander Melara Avalos
         </h3>
