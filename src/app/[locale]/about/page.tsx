@@ -23,7 +23,7 @@ export default function AboutPage() {
   return (
     <div className="container mx-auto flex flex-col px-4 py-10  md:pt-30 md:pb-20">
       <div className="flex flex-col items-center gap-4">
-        <div className="relative w-32 h-32 rounded-full overflow-hidden border-4 border-slate-800 shadow-xl">
+        <div className="relative w-32 h-32 rounded-full overflow-hidden border-4 border-slate-800 dark:border-slate-600 shadow-xl">
           <Image
             src="/images/about-profile.jpg"
             alt="Profile Picture"
