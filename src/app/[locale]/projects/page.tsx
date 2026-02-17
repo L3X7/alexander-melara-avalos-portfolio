@@ -19,11 +19,12 @@ export default async function ProjectPage({
     const matchesSearch =
       !searchTerm ||
       project.title.toLowerCase().includes(searchTerm) ||
-      project.description.toLowerCase().includes(searchTerm);
+      project.description.toLowerCase().includes(searchTerm) ||
+      project.tags.some((t) => t.includes(searchTerm));
 
     const matchesCategory =
+      !activeCategory ||
       activeCategory === "all" ||
-      activeCategory === "" ||
       project.tags.some((tag) => tag.toLowerCase() === activeCategory);
 
     return matchesSearch && matchesCategory;
