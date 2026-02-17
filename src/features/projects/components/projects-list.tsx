@@ -1,17 +1,20 @@
-import { Project } from "../types/project";
 import { Button } from "@/components/ui/button";
 import { ProjectCard } from "@/features/home/components/project-card";
 import { ArrowDown } from "lucide-react";
+import { useTranslations } from "next-intl";
+import { Project } from "../types/project";
 
 interface ProjectsListProps {
   projects: Project[];
 }
 
 export function ProjectsList({ projects }: ProjectsListProps) {
+  const t = useTranslations("MessageSection");
+
   if (projects.length === 0) {
     return (
       <div className="text-center py-10 text-muted-foreground">
-        No projects found matching your criteria.
+        {t("noProjectsFoundMatchingYourCriteria")}
       </div>
     );
   }

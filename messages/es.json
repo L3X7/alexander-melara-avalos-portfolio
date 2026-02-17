@@ -221,5 +221,9 @@
     "advanced": "Avanzado",
     "keyFeatures": "Características principales",
     "interfaceGallery": "Galería de interfaces"
+  },
+  "MessageSection": {
+    "noProjectsFoundMatchingYourCriteria": "No se han encontrado proyectos que coincidan con tus criterios.",
+    "noTechsFoundMatchingYourCriteria": "No se encontraron tecnologías que coincidan con tus criterios."
   }
 }
