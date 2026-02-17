@@ -1,8 +1,9 @@
 "use client";
 import { motion, Variants } from "motion/react";
+import { useTranslations } from "next-intl";
+import { useMemo } from "react";
 import { TechStackCard } from "./tech-stack-card";
 import { Tech } from "./types/tech";
-import { useMemo } from "react";
 
 const containerVariants: Variants = {
   hidden: { opacity: 0 },
@@ -32,12 +33,13 @@ interface TechStackListProps {
 }
 
 export function TechStackList({ techs }: TechStackListProps) {
+  const t = useTranslations("MessageSection");
   const listKey = useMemo(() => techs.map((t) => t.name).join("-"), [techs]);
 
   if (techs.length === 0) {
     return (
       <div className="text-center py-10 text-muted-foreground">
-        No techs found matching your criteria.
+        {t("noTechsFoundMatchingYourCriteria")}
       </div>
     );
   }
