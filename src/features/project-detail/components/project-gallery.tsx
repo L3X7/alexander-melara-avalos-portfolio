@@ -62,7 +62,7 @@ export function ProjectGallery({
                   typeStyles.mobile,
               )}
             >
-              <div className="absolute inset-0 bg-linear-to-t from-black/60 to-transparent z-10 opacity-60 group-hover:opacity-40 transition-opacity duration-500"></div>
+              <div className="absolute inset-0 bg-linear-to-t from-black/60 to-transparent z-10 opacity-60 group-hover:opacity-40 transition-opacity duration-500 pointer-events-none"></div>
               <Image
                 fill
                 alt={image.title}
