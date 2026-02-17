@@ -9,7 +9,7 @@ export const allProjects: Project[] = [
         localeKey: "description",
         url: "/project-detail?id=1",
         role: "Lead Software Engineer",
-        timeline: "Oct 2023 - Jan 2024",
+        timeline: "Jan 2026 - Present",
         tags: [
             "frontend",
             "nextjs",
@@ -63,7 +63,7 @@ export const allProjects: Project[] = [
         localeKey: "description",
         url: "/project-detail?id=2",
         role: "Lead Software Engineer",
-        timeline: "Oct 2023 - Jan 2024",
+        timeline: "Jun 2025 - Present",
         tags: [
             "mobile",
             "flutter",
