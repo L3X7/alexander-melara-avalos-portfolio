@@ -12,9 +12,10 @@ export const allProjects: Project[] = [
         timeline: "Jan 2026 - Present",
         tags: [
             "frontend",
+            "backend",
             "nextjs",
-            "typescript",
-            "nestjs"
+            "nestjs",
+            "in development"
         ],
         detailTopics: [
             {
@@ -66,8 +67,10 @@ export const allProjects: Project[] = [
         timeline: "Jun 2025 - Present",
         tags: [
             "mobile",
+            "backend",
             "flutter",
-            "nestjs"
+            "nestjs",
+            "in development"
         ],
         detailTopics: [
             {
