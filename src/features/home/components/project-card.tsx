@@ -87,7 +87,7 @@ export function ProjectCard({ project }: ProjectCardProps) {
             className="text-sm font-semibold text-primary flex items-center cursor-pointer w-fit hover:underline"
           >
             {t("viewProject")}
-            <ArrowUpRight className="mt-0.5 ml-0.5" />
+            <ArrowUpRight className="w-4 h-4 mt-0.5 ml-1" />
           </Link>
         </div>
       </CardContent>

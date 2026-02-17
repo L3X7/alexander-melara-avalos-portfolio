@@ -31,6 +31,7 @@
     "role": "Role",
     "timeline": "Timeline",
     "techStack": "Tech stack",
+    "backToProjects": "Back to Projects",
     "projects": [
       {
         "description": "A Circular Economy Logistics Platform focusing on sustainability and resource recovery. Built to optimize routes for material collection and track lifecycle metrics.",
@@ -224,6 +225,7 @@
   },
   "MessageSection": {
     "noProjectsFoundMatchingYourCriteria": "No projects found matching your criteria.",
-    "noTechsFoundMatchingYourCriteria": "No techs found matching your criteria."
+    "noTechsFoundMatchingYourCriteria": "No techs found matching your criteria.",
+    "projectNotFound": "Project not found."
   }
 }
