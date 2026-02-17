@@ -3,7 +3,9 @@ import { DetailTopics } from "@/features/project-detail/components/detail-topics
 import { KeyFeatures } from "@/features/project-detail/components/key-features";
 import { ProjectGallery } from "@/features/project-detail/components/project-gallery";
 import { ProjectInfo } from "@/features/project-detail/components/project-info";
+import { Link } from "@/i18n/routing";
 import { allProjects } from "@/lib/projects-data";
+import { ArrowLeft } from "lucide-react";
 import { useTranslations } from "next-intl";
 
 import { useSearchParams } from "next/navigation";
@@ -11,6 +13,7 @@ import { useSearchParams } from "next/navigation";
 export default function ProjectDetail() {
   const searchParams = useSearchParams();
   const t = useTranslations(`ProjectSection`);
+  const c = useTranslations("MessageSection");
 
   const project = allProjects.find(
     (p) => p.id === Number(searchParams.get("id")),
@@ -19,13 +22,20 @@ export default function ProjectDetail() {
   if (project == undefined) {
     return (
       <div className="container mx-auto flex flex-col px-4 py-10 md:pt-30 md:pb-2 text-center">
-        <h3>Project not found</h3>
+        <h3>{c("projectNotFound")}</h3>
       </div>
     );
   }
 
   return (
     <div className="container mx-auto flex flex-col px-4 py-10 md:pt-30 md:pb-20">
+      <Link
+        href="/projects"
+        className="group inline-flex items-center text-sm font-medium text-zinc-500 hover:text-zinc-900 dark:text-zinc-400 dark:hover:text-zinc-100 transition-colors mb-6"
+      >
+        <ArrowLeft className="w-4 h-4 mr-2 group-hover:-translate-x-1 transition-transform" />
+        {t("backToProjects")}
+      </Link>
       <h1 className="text-5xl md:text-6xl font-bold tracking-tight mb-6">
         {project.title}
       </h1>

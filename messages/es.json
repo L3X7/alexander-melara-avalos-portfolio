@@ -31,6 +31,7 @@
     "role": "Rol",
     "timeline": "Cronología",
     "techStack": "Stack tecnológico",
+    "backToProjects": "Volver a Proyectos",
     "projects": [
       {
         "description": "Una plataforma logística de economía circular centrada en la sostenibilidad y la recuperación de recursos. Diseñada para optimizar las rutas de recogida de materiales y realizar un seguimiento de las métricas del ciclo de vida.",
@@ -224,6 +225,7 @@
   },
   "MessageSection": {
     "noProjectsFoundMatchingYourCriteria": "No se han encontrado proyectos que coincidan con tus criterios.",
-    "noTechsFoundMatchingYourCriteria": "No se encontraron tecnologías que coincidan con tus criterios."
+    "noTechsFoundMatchingYourCriteria": "No se encontraron tecnologías que coincidan con tus criterios.",
+    "projectNotFound": "Proyecto no encontrado."
   }
 }
