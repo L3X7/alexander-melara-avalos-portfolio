@@ -34,27 +34,35 @@
     "backToProjects": "Back to Projects",
     "projects": [
       {
-        "description": "A Circular Economy Logistics Platform focusing on sustainability and resource recovery. Built to optimize routes for material collection and track lifecycle metrics.",
+        "description": "Community-driven Progressive Web App (PWA) for real-time reporting of urban incidents and infrastructure issues.",
         "detailTopics": [
           {
             "number": "01",
             "title": "The Challenge",
-            "description": "The industrial circular economy is currently fragmented, relying on opaque supply chains and manual coordination (spreadsheets, emails) to trade recoverable resources. Businesses struggle to find reliable partners for waste valorization, leading to inefficient logistics and lost revenue. The goal was to replace these disconnected processes with a unified, transparent marketplace that simplifies complex B2B negotiations while providing verifiable sustainability metrics."
+            "description": "Communities often lack a unified, accessible platform to report and track local issues like infrastructure damage, water leaks, or safety incidents. Information is usually scattered across social media or lost in bureaucratic channels, leaving neighbors uninformed and problems unresolved. The goal was to build a centralized, community-driven tool that empowers people to map out local issues visually, collaborate through updates, and stay informed about their surroundings in real-time."
           },
           {
             "number": "02",
             "title": "The Solution",
-            "description": "I engineered a robust B2B platform focused on trust and traceability. The backend architecture, built with NestJS and Prisma, manages complex state machines for multi-stage negotiations and order fulfillment. On the frontend, we utilized Next.js to create a clean, data-dense interface that allows logistics managers to visualize material flows instantly. The system abstracts the complexity of circular logistics, presenting users with actionable insights on resource recovery rates and transaction status in real-time."
+            "description": "I engineered a fast, mobile-first Progressive Web App (PWA) designed for seamless civic engagement. The frontend, built with React, Vite, and Tailwind CSS, provides a clean, native-like experience on any device. For the backend, I integrated Supabase, leveraging PostgreSQL and PostGIS to handle complex spatial data and location-based queries. By combining interactive Leaflet maps with client-side image compression and strict Row Level Security (RLS) policies, the platform ensures data integrity while offering real-time visibility into community-reported incidents."
           }
         ],
         "keyFeatures": [
           {
-            "title": "Smart Negotiations",
-            "description": "Real-time offer and counter-offer system with automated state validation."
+            "title": "Interactive Spatial Mapping",
+            "description": "Dynamic map interface powered by Leaflet and PostGIS, allowing users to accurately pinpoint and visualize incidents based on their GPS coordinates."
           },
           {
-            "title": "Lifecycle Tracking",
-            "description": "End-to-end visibility of material recovery, from generation to re-processing."
+            "title": "Real-time Community Reporting",
+            "description": "End-to-end incident tracking featuring secure photo uploads, localized issue tagging, and a comment system for community updates."
+          },
+          {
+            "title": "Progressive Web App (PWA)",
+            "description": "Optimized for mobile performance with robust caching strategies, allowing users to install the app directly to their home screen."
+          },
+          {
+            "title": "Robust Security & i18n",
+            "description": "Multi-language support (English/Spanish) and secure data management using Supabase Row Level Security (RLS) to protect user-generated content."
           }
         ]
       },
