@@ -34,28 +34,36 @@
     "backToProjects": "Volver a Proyectos",
     "projects": [
       {
-        "description": "Una plataforma logística de economía circular centrada en la sostenibilidad y la recuperación de recursos. Diseñada para optimizar las rutas de recogida de materiales y realizar un seguimiento de las métricas del ciclo de vida.",
+        "description": "Aplicación web progresiva orientada a la participación ciudadana para el reporte en tiempo real de incidentes e infraestructura urbana.",
         "detailTopics": [
           {
             "number": "01",
             "title": "El Desafío",
-            "description": "La economía circular industrial se encuentra actualmente fragmentada, dependiendo de cadenas de suministro opacas y coordinación manual (hojas de cálculo, correos) para comerciar recursos recuperables. Las empresas luchan por encontrar socios confiables para la valorización de residuos, lo que resulta en logística ineficiente y pérdida de ingresos. El objetivo era reemplazar estos procesos desconectados con un mercado unificado y transparente que simplifique las complejas negociaciones B2B y proporcione métricas de sostenibilidad verificables."
+            "description": "Las comunidades a menudo carecen de una plataforma unificada y accesible para reportar y rastrear problemas locales como daños en la infraestructura, fugas de agua o incidentes de seguridad. La información suele perderse en redes sociales o en canales burocráticos, dejando a los vecinos desinformados y los problemas sin resolver. El objetivo era construir una herramienta centralizada, impulsada por la comunidad, que empoderara a las personas para mapear visualmente estos problemas, colaborar mediante actualizaciones y mantenerse informados sobre su entorno en tiempo real."
           },
           {
             "number": "02",
             "title": "La Solución",
-            "description": "Diseñe una plataforma B2B robusta centrada en la confianza y la trazabilidad. La arquitectura backend, construida con NestJS y Prisma, gestiona complejas máquinas de estado para negociaciones de múltiples etapas y cumplimiento de pedidos. En el frontend, utilizamos Next.js para crear una interfaz limpia y densa en datos que permite a los gerentes de logística visualizar los flujos de materiales al instante. El sistema abstrae la complejidad de la logística circular, presentando a los usuarios información procesable (actionable insights) sobre tasas de recuperación de recursos y estado de transacciones en tiempo real."
+            "description": "Desarrollé una Aplicación Web Progresiva (PWA) rápida y enfocada en dispositivos móviles, diseñada para facilitar la participación ciudadana. El frontend, construido con React, Vite y Tailwind CSS, ofrece una experiencia limpia y casi nativa en cualquier dispositivo. Para el backend, integré Supabase, utilizando PostgreSQL y PostGIS para manejar datos espaciales complejos y consultas basadas en ubicación. Al combinar mapas interactivos de Leaflet con compresión de imágenes en el cliente y estrictas políticas de seguridad (Row Level Security), la plataforma garantiza la integridad de los datos mientras ofrece visibilidad en tiempo real de los incidentes reportados."
           }
         ],
         "keyFeatures": [
-          {
-            "title": "Negociaciones Inteligentes",
-            "description": "Sistema de ofertas y contraofertas en tiempo real con validación de estado automatizada."
-          },
-          {
-            "title": "Trazabilidad del Ciclo de Vida",
-            "description": "Visibilidad de extremo a extremo de la recuperación de materiales, desde la generación hasta el reprocesamiento."
-          }
+                {
+                    "title": "Mapeo Espacial Interactivo",
+                    "description": "Interfaz de mapa dinamico impulsado por Leaflet y PostGIS, que permite a los usuarios señalar y visualizar incidentes con precisión basados en sus coordenadas GPS."
+                },
+                {
+                    "title": "Reportes Comunitarios en Tiempo Real",
+                    "description": "Seguimiento de incidentes de principio a fin, incluyendo subida segura de fotos, etiquetado localizado de problemas y un sistema de comentarios para actualizaciones de la comunidad."
+                },
+                {
+                    "title": "Aplicación Web Progresiva (PWA)",
+                    "description": "Optimizada para el rendimiento móvil con estrategias de caché robustas, permitiendo a los usuarios instalar la aplicación directamente en su pantalla de inicio."
+                },
+                {
+                    "title": "Seguridad Robusta e Internacionalización",
+                    "description": "Soporte multi-idioma (Inglés/Español) y gestión segura de datos mediante Row Level Security (RLS) en Supabase para proteger el contenido generado por los usuarios."
+                }
         ]
       },
       {
